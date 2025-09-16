@@ -1,0 +1,108 @@
+import React from "react";
+import "./styles.css";
+
+export default function App() {
+  return (
+    <div className="app">
+      <header className="header">
+        <h1>NEAT SOLUTION (PVT) LTD</h1>
+        <p>Green Plant Project – Sustainable Approach to Green Development</p>
+      </header>
+
+      <main>
+        <section className="section">
+          <h2>Company Overview</h2>
+          <p>
+            Committed to eco-friendly green development through a model plant
+            nursery serving local and international markets. Focused on
+            sustainable cultivation, renewable energy, and climate resilience.
+          </p>
+        </section>
+
+        <section className="section alt">
+          <h2>Vision & Mission</h2>
+          <p>
+            <strong>Vision:</strong> To become a leading global provider of
+            sustainable tropical and ornamental plants.
+          </p>
+          <p>
+            <strong>Mission:</strong> To cultivate and supply high-quality,
+            climate-resilient plants using organic and sustainable practices while
+            meeting international standards.
+          </p>
+        </section>
+
+        <section className="section">
+          <h2>Product Portfolio</h2>
+          <ul>
+            <li>Export-standard tropical plants</li>
+            <li>Ornamental plants (Foliage & Flowering)</li>
+            <li>Australian grass varieties (Zoysia)</li>
+            <li>Malaysian grass varieties</li>
+            <li>Salt-tolerant plants for saline climates</li>
+          </ul>
+        </section>
+
+        <section className="section alt">
+          <h2>Production Standards</h2>
+          <ul>
+            <li>Sterilized coir dust as planting media</li>
+            <li>Compliance with National Plant Quarantine Service (Sri Lanka)</li>
+            <li>Pest, fungal, bacterial, and nematode-free</li>
+            <li>Organic-based fertilizers and agro-inputs</li>
+            <li>Sterilized pots and grow bags</li>
+          </ul>
+        </section>
+
+        <section className="section">
+          <h2>Sustainable Practices</h2>
+          <ul>
+            <li>Organic fertilizers to protect ecosystems</li>
+            <li>Renewable energy to minimize carbon footprint</li>
+            <li>Sterilization for sustainable production</li>
+            <li>Socially responsible employment practices</li>
+          </ul>
+        </section>
+
+        <section className="section alt">
+          <h2>Competitive Advantages</h2>
+          <ul>
+            <li>Compliance with international phytosanitary regulations</li>
+            <li>Capability to fulfill bulk export orders</li>
+            <li>Climate-resilient plant varieties</li>
+            <li>Eco-friendly and sustainable inputs</li>
+            <li>Dedicated R&D for continuous improvement</li>
+          </ul>
+        </section>
+
+        <section className="section">
+          <h2>Target Markets</h2>
+          <ul>
+            <li>Export customers (Europe, Middle East, Asia-Pacific)</li>
+            <li>Local landscaping companies and developers</li>
+            <li>Government and private sector green projects</li>
+            <li>Eco-conscious home gardeners</li>
+          </ul>
+        </section>
+
+        <section className="section alt">
+          <h2>Contact Information</h2>
+          <p>
+            <strong>Tel:</strong> +94 11 554 1453
+          </p>
+          <p>
+            <strong>Fax:</strong> +94 11 554 1454
+          </p>
+          <p>
+            <strong>Web:</strong>{" "}
+            <a href="http://www.neatsolutions.asia">www.neatsolutions.asia</a>
+          </p>
+        </section>
+      </main>
+
+      <footer className="footer">
+        <p>Growing greener futures, sustainably.</p>
+      </footer>
+    </div>
+  );
+}
