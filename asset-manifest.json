@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/toney/static/css/main.544a707f.css",
+    "main.js": "/toney/static/js/main.3b34502a.js",
+    "index.html": "/toney/index.html",
+    "main.544a707f.css.map": "/toney/static/css/main.544a707f.css.map",
+    "main.3b34502a.js.map": "/toney/static/js/main.3b34502a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.544a707f.css",
+    "static/js/main.3b34502a.js"
+  ]
+}
