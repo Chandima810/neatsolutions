@@ -1,13 +1,21 @@
 {
   "files": {
-    "main.css": "/neatsolutions/static/css/main.544a707f.css",
-    "main.js": "/neatsolutions/static/js/main.3b34502a.js",
+    "main.css": "/neatsolutions/static/css/main.a093969d.css",
+    "main.js": "/neatsolutions/static/js/main.44ab0c13.js",
+    "static/media/logo.png": "/neatsolutions/static/media/logo.35e39ab109b001204a28.png",
+    "static/media/nursery3.jpg": "/neatsolutions/static/media/nursery3.67414476ae16ef7525a3.jpg",
+    "static/media/nursery2.jpg": "/neatsolutions/static/media/nursery2.c01bfd09758c0fc748ee.jpg",
+    "static/media/nursery7.jpg": "/neatsolutions/static/media/nursery7.cd37debbdaa0c557db8c.jpg",
+    "static/media/nursery6.jpg": "/neatsolutions/static/media/nursery6.19cca64c2bb3b175e8ee.jpg",
+    "static/media/nursery5.jpg": "/neatsolutions/static/media/nursery5.60ffd96851ec08b77e20.jpg",
+    "static/media/nursery1.jpg": "/neatsolutions/static/media/nursery1.2caf606d81145834f29f.jpg",
+    "static/media/nursery4.jpg": "/neatsolutions/static/media/nursery4.cc5958f7199458ec1249.jpg",
     "index.html": "/neatsolutions/index.html",
-    "main.544a707f.css.map": "/neatsolutions/static/css/main.544a707f.css.map",
-    "main.3b34502a.js.map": "/neatsolutions/static/js/main.3b34502a.js.map"
+    "main.a093969d.css.map": "/neatsolutions/static/css/main.a093969d.css.map",
+    "main.44ab0c13.js.map": "/neatsolutions/static/js/main.44ab0c13.js.map"
   },
   "entrypoints": [
-    "static/css/main.544a707f.css",
-    "static/js/main.3b34502a.js"
+    "static/css/main.a093969d.css",
+    "static/js/main.44ab0c13.js"
   ]
 }
