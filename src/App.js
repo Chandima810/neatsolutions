@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
 
 // Import logo and 7 nursery images
@@ -12,17 +12,21 @@ import nursery6 from "./assets/nursery6.jpg";
 import nursery7 from "./assets/nursery7.jpg";
 
 export default function App() {
+  const images = [nursery1, nursery2, nursery3, nursery4, nursery5, nursery6, nursery7];
+  const [lightboxImage, setLightboxImage] = useState(null);
+
   return (
     <div className="app">
+      {/* Header */}
       <header className="header">
-  <div className="brand">
-    <img src={logo} alt="NEAT SOLUTION logo" className="logo" />
-    <h1>NEAT SOLUTION (PVT) LTD</h1>
-  </div>
-  <p>Green Plant Project – Sustainable Approach to Green Development</p>
-</header>
+        <div className="brand">
+          <img src={logo} alt="NEAT SOLUTION logo" className="logo" />
+          <h1>NEAT SOLUTION (PVT) LTD</h1>
+        </div>
+        <p>Green Plant Project – Sustainable Approach to Green Development</p>
+      </header>
 
-
+      {/* Main Content */}
       <main>
         <section className="section">
           <h2>Company Overview</h2>
@@ -99,38 +103,41 @@ export default function App() {
           </ul>
         </section>
 
-        {/* ✅ Photo gallery moved here */}
+        {/* Photo Gallery with Lightbox */}
         <section className="section gallery">
           <h2>Our Nursery</h2>
-          <div className="gallery-grid">
-            <img src={nursery1} alt="Nursery 1" />
-            <img src={nursery2} alt="Nursery 2" />
-            <img src={nursery3} alt="Nursery 3" />
-            <img src={nursery4} alt="Nursery 4" />
-            <img src={nursery5} alt="Nursery 5" />
-            <img src={nursery6} alt="Nursery 6" />
-            <img src={nursery7} alt="Nursery 7" />
+          <div className="image-grid">
+            {images.map((src, index) => (
+              <img
+                key={index}
+                src={src}
+                alt={`Nursery ${index + 1}`}
+                onClick={() => setLightboxImage(src)}
+              />
+            ))}
           </div>
         </section>
 
         <section className="section alt">
           <h2>Contact Information</h2>
-          <p>
-            <strong>Tel:</strong> +94 11 554 1453
-          </p>
-          <p>
-            <strong>Fax:</strong> +94 11 554 1454
-          </p>
-          <p>
-            <strong>Web:</strong>{" "}
-            <a href="http://www.neatsolutions.asia">www.neatsolutions.asia</a>
-          </p>
+          <p><strong>Tel:</strong> +94 11 554 1453</p>
+          <p><strong>Fax:</strong> +94 11 554 1454</p>
+          <p><strong>Web:</strong> <a href="http://www.neatsolutions.asia">www.neatsolutions.asia</a></p>
         </section>
       </main>
 
+      {/* Footer */}
       <footer className="footer">
         <p>© NEAT SOLUTION — Growing greener futures, sustainably.</p>
       </footer>
+
+      {/* Lightbox Overlay */}
+      <div
+        className={`lightbox-overlay ${lightboxImage ? "active" : ""}`}
+        onClick={() => setLightboxImage(null)}
+      >
+        {lightboxImage && <img src={lightboxImage} alt="Enlarged Nursery" />}
+      </div>
     </div>
   );
 }
