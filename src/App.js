@@ -1,13 +1,27 @@
 import React from "react";
 import "./styles.css";
 
+// Import logo and 7 nursery images
+import logo from "./assets/logo.png";
+import nursery1 from "./assets/nursery1.jpg";
+import nursery2 from "./assets/nursery2.jpg";
+import nursery3 from "./assets/nursery3.jpg";
+import nursery4 from "./assets/nursery4.jpg";
+import nursery5 from "./assets/nursery5.jpg";
+import nursery6 from "./assets/nursery6.jpg";
+import nursery7 from "./assets/nursery7.jpg";
+
 export default function App() {
   return (
     <div className="app">
       <header className="header">
-        <h1>NEAT SOLUTION (PVT) LTD</h1>
-        <p>Green Plant Project – Sustainable Approach to Green Development</p>
-      </header>
+  <div className="brand">
+    <img src={logo} alt="NEAT SOLUTION logo" className="logo" />
+    <h1>NEAT SOLUTION (PVT) LTD</h1>
+  </div>
+  <p>Green Plant Project – Sustainable Approach to Green Development</p>
+</header>
+
 
       <main>
         <section className="section">
@@ -27,8 +41,8 @@ export default function App() {
           </p>
           <p>
             <strong>Mission:</strong> To cultivate and supply high-quality,
-            climate-resilient plants using organic and sustainable practices while
-            meeting international standards.
+            climate-resilient plants using organic and sustainable practices
+            while meeting international standards.
           </p>
         </section>
 
@@ -85,6 +99,20 @@ export default function App() {
           </ul>
         </section>
 
+        {/* ✅ Photo gallery moved here */}
+        <section className="section gallery">
+          <h2>Our Nursery</h2>
+          <div className="gallery-grid">
+            <img src={nursery1} alt="Nursery 1" />
+            <img src={nursery2} alt="Nursery 2" />
+            <img src={nursery3} alt="Nursery 3" />
+            <img src={nursery4} alt="Nursery 4" />
+            <img src={nursery5} alt="Nursery 5" />
+            <img src={nursery6} alt="Nursery 6" />
+            <img src={nursery7} alt="Nursery 7" />
+          </div>
+        </section>
+
         <section className="section alt">
           <h2>Contact Information</h2>
           <p>
@@ -101,7 +129,7 @@ export default function App() {
       </main>
 
       <footer className="footer">
-        <p>Growing greener futures, sustainably.</p>
+        <p>© NEAT SOLUTION — Growing greener futures, sustainably.</p>
       </footer>
     </div>
   );
