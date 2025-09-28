@@ -18,6 +18,9 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center 0;
 }
 
 /* Header */
@@ -67,17 +70,40 @@ main {
   border-radius: 12px;
   background: #fff;
   box-shadow: 0 6px 18px rgba(16, 24, 32, 0.06);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
 }
 
 .section.alt {
   background: rgba(63, 161, 114, 0.06);
 }
 
+/* Side-by-side layout */
+.side-by-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .side-by-side {
+    flex-direction: row;
+    align-items: center;
+  }
+  .side-by-side .text,
+  .side-by-side .image-box {
+    flex: 1;
+  }
+}
+
+/* Section titles */
 .section h2 {
   margin-top: 0;
   color: var(--green-600);
 }
 
+/* Lists and links */
 .section ul {
   list-style: disc;
   margin-left: 20px;
@@ -98,15 +124,25 @@ main {
   font-size: 14px;
 }
 
-/* Responsive images (all except logo) */
+/* Images */
 img:not(.logo) {
   max-width: 100%;
   height: auto;
   display: block;
   border-radius: 8px;
   margin: 10px auto;
-  cursor: pointer; /* for lightbox effect */
-  transition: transform 0.2s ease;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover scale + lift + shadow */
+.hover-parallax {
+  transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
+}
+
+.shadow-lift:hover {
+  transform: scale(1.03) translateY(-5px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
 }
 
 /* Lightbox hover effect */
@@ -114,27 +150,25 @@ img:not(.logo):hover {
   transform: scale(1.05);
 }
 
-/* Responsive gallery grid */
+/* Gallery grid */
 .image-grid {
   display: grid;
   gap: 16px;
 }
 
-/* Medium screens: 3 images per row */
 @media (min-width: 768px) {
   .image-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* Large screens: 4 images per row */
 @media (min-width: 1200px) {
   .image-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-/* Lightbox overlay (hidden by default, fades in/out) */
+/* Lightbox overlay */
 .lightbox-overlay {
   position: fixed;
   top: 0;
@@ -165,4 +199,25 @@ img:not(.logo):hover {
 
 .lightbox-overlay img:hover {
   transform: scale(1.03);
+}
+
+/* Section entry animations */
+.section.slide-fade-in {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+
+.section:nth-child(even).slide-fade-in {
+  transform: translateX(30px);
+}
+
+.section:nth-child(odd).slide-fade-in {
+  transform: translateX(-30px);
+}
+
+/* Staggered fade-in for section children */
+.fade-slide-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: transform 0.8s ease, opacity 0.8s ease;
 }
