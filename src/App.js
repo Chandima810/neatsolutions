@@ -31,9 +31,7 @@ export default function App() {
         <section className="section">
           <h2>Company Overview</h2>
           <p>
-            Committed to eco-friendly green development through a model plant
-            nursery serving local and international markets. Focused on
-            sustainable cultivation, renewable energy, and climate resilience.
+            Inca Solutions, formerly operating as NeatSolutions, has evolved into a forward-looking, climate-compliant company dedicated to eco-friendly green development. Building on the strong foundation of its predecessor, Inca Solutions operates a model plant nursery serving both local and international markets. We prioritize sustainable cultivation, renewable energy integration, and climate-resilient practices, ensuring that every step of our growth contributes to a greener and more sustainable future.
           </p>
         </section>
 
