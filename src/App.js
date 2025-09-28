@@ -21,7 +21,7 @@ export default function App() {
       <header className="header">
         <div className="brand">
           <img src={logo} alt="NEAT SOLUTION logo" className="logo" />
-          <h1>NEAT SOLUTION (PVT) LTD</h1>
+          <h1>INCA SOLUTION (PVT) LTD</h1>
         </div>
         <p>Green Plant Project – Sustainable Approach to Green Development</p>
       </header>
@@ -126,7 +126,7 @@ export default function App() {
 
       {/* Footer */}
       <footer className="footer">
-        <p>© NEAT SOLUTION — Growing greener futures, sustainably.</p>
+        <p>© INCA SOLUTION — Growing greener futures, sustainably.</p>
       </footer>
 
       {/* Lightbox Overlay */}
