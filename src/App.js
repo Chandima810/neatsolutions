@@ -97,7 +97,7 @@ export default function App() {
       <header className="header">
         <div className="brand">
           <img src={logo} alt="NEAT SOLUTION logo" className="logo" />
-          <h1>INCA SOLUTION (PVT) LTD</h1>
+          <h1>INCA CEYLON (PVT) LTD</h1>
         </div>
         <p>Green Plant Project – Sustainable Approach to Green Development</p>
       </header>
@@ -110,10 +110,10 @@ export default function App() {
         >
           <h2>Company Overview</h2>
           <p>
-            Inca Solutions, formerly operating as NeatSolutions, has evolved into
+            Inca Ceylon, formerly operating as Neat Solutions, has evolved into
             a forward-looking, climate-compliant company dedicated to eco-friendly
             green development. Building on the strong foundation of its predecessor,
-            Inca Solutions operates a model plant nursery serving both local and
+            Inca Ceylon operates a model plant nursery serving both local and
             international markets. We prioritize sustainable cultivation, renewable
             energy integration, and climate-resilient practices, ensuring that every
             step of our growth contributes to a greener and more sustainable future.
@@ -282,7 +282,7 @@ export default function App() {
       </main>
 
       <footer className="footer">
-        <p>© INCA SOLUTION — Growing greener futures, sustainably.</p>
+        <p>© INCA CEYLON — Growing greener futures, sustainably.</p>
       </footer>
 
       {/* Lightbox */}
