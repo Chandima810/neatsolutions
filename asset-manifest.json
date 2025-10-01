@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/neatsolutions/static/css/main.479b16c9.css",
-    "main.js": "/neatsolutions/static/js/main.f88cf1b5.js",
-    "static/media/background.png": "/neatsolutions/static/media/background.2716bf8a8a01c631a162.png",
-    "static/media/nursery3.jpg": "/neatsolutions/static/media/nursery3.67414476ae16ef7525a3.jpg",
-    "static/media/nursery2.jpg": "/neatsolutions/static/media/nursery2.c01bfd09758c0fc748ee.jpg",
-    "static/media/nursery7.jpg": "/neatsolutions/static/media/nursery7.cd37debbdaa0c557db8c.jpg",
-    "static/media/nursery6.jpg": "/neatsolutions/static/media/nursery6.19cca64c2bb3b175e8ee.jpg",
-    "static/media/nursery5.jpg": "/neatsolutions/static/media/nursery5.60ffd96851ec08b77e20.jpg",
-    "static/media/nursery1.jpg": "/neatsolutions/static/media/nursery1.2caf606d81145834f29f.jpg",
-    "static/media/nursery4.jpg": "/neatsolutions/static/media/nursery4.cc5958f7199458ec1249.jpg",
-    "static/media/logo.png": "/neatsolutions/static/media/logo.a7027c084c8b8c5264ca.png",
-    "static/media/organic.jpg": "/neatsolutions/static/media/organic.be3126db8d5dccada7f4.jpg",
-    "static/media/coir.jpg": "/neatsolutions/static/media/coir.1c822753b773c4ebe5a1.jpg",
-    "static/media/expo.jpg": "/neatsolutions/static/media/expo.ca2ca441ffb89a8cd3b5.jpg",
-    "index.html": "/neatsolutions/index.html",
-    "main.479b16c9.css.map": "/neatsolutions/static/css/main.479b16c9.css.map",
-    "main.f88cf1b5.js.map": "/neatsolutions/static/js/main.f88cf1b5.js.map"
+    "main.css": "/static/css/main.479b16c9.css",
+    "main.js": "/static/js/main.c8800566.js",
+    "static/media/background.png": "/static/media/background.2716bf8a8a01c631a162.png",
+    "static/media/nursery3.jpg": "/static/media/nursery3.67414476ae16ef7525a3.jpg",
+    "static/media/nursery2.jpg": "/static/media/nursery2.c01bfd09758c0fc748ee.jpg",
+    "static/media/nursery7.jpg": "/static/media/nursery7.cd37debbdaa0c557db8c.jpg",
+    "static/media/nursery6.jpg": "/static/media/nursery6.19cca64c2bb3b175e8ee.jpg",
+    "static/media/nursery5.jpg": "/static/media/nursery5.60ffd96851ec08b77e20.jpg",
+    "static/media/nursery1.jpg": "/static/media/nursery1.2caf606d81145834f29f.jpg",
+    "static/media/nursery4.jpg": "/static/media/nursery4.cc5958f7199458ec1249.jpg",
+    "static/media/logo.png": "/static/media/logo.a7027c084c8b8c5264ca.png",
+    "static/media/organic.jpg": "/static/media/organic.be3126db8d5dccada7f4.jpg",
+    "static/media/coir.jpg": "/static/media/coir.1c822753b773c4ebe5a1.jpg",
+    "static/media/expo.jpg": "/static/media/expo.ca2ca441ffb89a8cd3b5.jpg",
+    "index.html": "/index.html",
+    "main.479b16c9.css.map": "/static/css/main.479b16c9.css.map",
+    "main.c8800566.js.map": "/static/js/main.c8800566.js.map"
   },
   "entrypoints": [
     "static/css/main.479b16c9.css",
-    "static/js/main.f88cf1b5.js"
+    "static/js/main.c8800566.js"
   ]
 }
