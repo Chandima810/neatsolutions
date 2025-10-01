@@ -2,8 +2,8 @@
   "name": "neat-solution-pitch",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://Chandima810.github.io/neatsolutions",
-  "dependencies": {
+  "homepage": "https://incaceylon.com",
+    "dependencies": {
     "gh-pages": "^6.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
