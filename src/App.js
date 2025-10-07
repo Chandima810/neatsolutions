@@ -111,7 +111,7 @@ export default function App() {
           <h2>Company Overview</h2>
           <p>
             Inca Ceylon, was incorporated on 21st October 2024 as a subsidiary of Neat Solutions Pvt Ltd, has evolved into a forward-looking, climate-compliant company dedicated to eco-friendly green development. Building on the strong foundation of its founder, Inca Ceylon operates model plant nurseries serving both local and international landscaping markets. 
-The Team Leader of the project, Commodore K. Tony M. Perera, a BSc (Agriculture) graduate from University of Peradeniya is a leading horticulturist with experience in landscaping projects such as Arcade- Torrington square, Gregory lake– Nuwaraeliya,  Viharamahadevi Park– Colombo 07, provides his fulltime expertise for our sustainable cultivation, renewable energy integration, and climate-resilient practices, ensuring that every step of our growth contributes to a greener and more sustainable future.
+<p>The Team Leader of the project, Commodore K. Tony M. Perera, a BSc (Agriculture) graduate from University of Peradeniya is a leading horticulturist with experience in landscaping projects such as Arcade- Torrington square, Gregory lake– Nuwaraeliya,  Viharamahadevi Park– Colombo 07, provides his fulltime expertise for our sustainable cultivation, renewable energy integration, and climate-resilient practices, ensuring that every step of our growth contributes to a greener and more sustainable future.</p>
 
           </p>
         </section>
