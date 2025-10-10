@@ -83,39 +83,6 @@ export default function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // ✨ Dynamic contrast detection (text color switch)
-  useEffect(() => {
-    const adjustTextContrast = () => {
-      sectionsRef.current.forEach((section) => {
-        if (!section) return;
-        const bgColor = window.getComputedStyle(section).backgroundColor;
-        if (bgColor) {
-          const rgb = bgColor
-            .replace(/[^\d,]/g, "")
-            .split(",")
-            .map((n) => parseInt(n.trim(), 10));
-          const brightness = (rgb[0] * 299 + rgb[1] * 587 + rgb[2] * 114) / 1000;
-          if (brightness < 150) {
-            section.classList.add("text-light");
-            section.classList.remove("text-dark");
-          } else {
-            section.classList.add("text-dark");
-            section.classList.remove("text-light");
-          }
-        }
-      });
-    };
-
-    adjustTextContrast();
-    window.addEventListener("scroll", adjustTextContrast);
-    window.addEventListener("resize", adjustTextContrast);
-
-    return () => {
-      window.removeEventListener("scroll", adjustTextContrast);
-      window.removeEventListener("resize", adjustTextContrast);
-    };
-  }, []);
-
   const setImageRef = (el, index) => {
     imageRefs.current[index] = el;
   };
@@ -137,24 +104,15 @@ export default function App() {
 
       <main>
         {/* Sections */}
-        <section className="section" ref={(el) => (sectionsRef.current[0] = el)}>
+        <section
+          className="section"
+          ref={(el) => (sectionsRef.current[0] = el)}
+        >
           <h2>Company Overview</h2>
           <p>
-            Inca Ceylon, was incorporated on 21st October 2024 as a subsidiary of
-            Neat Solutions Pvt Ltd, has evolved into a forward-looking,
-            climate-compliant company dedicated to eco-friendly green
-            development. Building on the strong foundation of its founder, Inca
-            Ceylon operates model plant nurseries serving both local and
-            international landscaping markets.
-          </p>
-          <p>
-            The Team Leader of the project, Cmde (Rtd) Tony Perera, a BSc.
-            (Agriculture) graduate from University of Peradeniya, is a leading
-            horticulturist with experience in landscaping projects such as Arcade–
-            Torrington Square, Gregory Lake–Nuwara Eliya, and Viharamahadevi
-            Park–Colombo 07, providing full-time expertise for sustainable
-            cultivation, renewable energy integration, and climate-resilient
-            practices.
+            Inca Ceylon, was incorporated on 21st October 2024 as a subsidiary of Neat Solutions Pvt Ltd, has evolved into a forward-looking, climate-compliant company dedicated to eco-friendly green development. Building on the strong foundation of its founder, Inca Ceylon operates model plant nurseries serving both local and international landscaping markets. 
+<p>The Team Leader of the project, Cmde (Rtd) Tony Perera, a BSc. (Agriculture) graduate from University of Peradeniya is a leading horticulturist with experience in landscaping projects such as Arcade- Torrington square, Gregory lake– Nuwaraeliya,  Viharamahadevi Park– Colombo 07, provides his fulltime expertise for our sustainable cultivation, renewable energy integration, and climate-resilient practices, ensuring that every step of our growth contributes to a greener and more sustainable future.</p>
+
           </p>
         </section>
 
@@ -169,8 +127,8 @@ export default function App() {
           </p>
           <p>
             <strong>Mission:</strong> To cultivate and supply high-quality,
-            climate-resilient plants using organic and sustainable practices while
-            meeting international standards.
+            climate-resilient plants using organic and sustainable practices
+            while meeting international standards.
           </p>
         </section>
 
@@ -248,37 +206,96 @@ export default function App() {
           </div>
         </section>
 
-        {/* Contact Info */}
-        <section className="section alt" ref={(el) => (sectionsRef.current[5] = el)}>
-          <h2>Contact Information</h2>
-          <p>
-            <strong>Team Leader:</strong> 0718507433 / 0767850469
-          </p>
-          <p>
-            <strong>Email:</strong>{" "}
-            <a href="mailto:inca@neatsolutions.asia">inca@neatsolutions.asia</a>
-          </p>
-          <p>
-            <strong>Web:</strong>{" "}
-            <a
-              href="https://incaceylon.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              incaceylon.com
-            </a>
-          </p>
-          <p>
-            <strong>Web:</strong>{" "}
-            <a
-              href="http://www.neatsolutions.asia"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              www.neatsolutions.asia
-            </a>
-          </p>
+        {/* Competitive Advantages */}
+        <section
+          className="section alt side-by-side"
+          ref={(el) => (sectionsRef.current[5] = el)}
+        >
+          <div className="text">
+            <h2>Competitive Advantages</h2>
+            <ul>
+              <li>Compliance with international phytosanitary regulations</li>
+              <li>Capability to fulfill bulk export orders</li>
+              <li>Climate-resilient plant varieties</li>
+              <li>Eco-friendly and sustainable inputs</li>
+              <li>Dedicated R&D for continuous improvement</li>
+            </ul>
+          </div>
+          <div className="image-box">
+            <img
+              src={nursery7}
+              alt="Competitive Advantages"
+              ref={(el) => setImageRef(el, 3)}
+              className="hover-parallax shadow-lift"
+            />
+          </div>
         </section>
+
+        {/* Target Markets */}
+        <section
+          className="section"
+          ref={(el) => (sectionsRef.current[6] = el)}
+        >
+          <h2>Target Markets</h2>
+          <ul>
+            <li>Export customers (Europe, Middle East, Asia-Pacific)</li>
+            <li>Local landscaping companies and developers</li>
+            <li>Government and private sector green projects</li>
+            <li>Eco-conscious home gardeners</li>
+          </ul>
+        </section>
+
+        {/* Photo Gallery with Lightbox */}
+        <section
+          className="section gallery"
+          ref={(el) => (sectionsRef.current[7] = el)}
+        >
+          <h2>Our Nursery</h2>
+          <div className="image-grid">
+            {nurseryImages.map((src, index) => (
+              <img
+                key={index}
+                src={src}
+                alt={`Nursery ${index + 1}`}
+                onClick={() => setLightboxImage(src)}
+                ref={(el) => setImageRef(el, index + 4)}
+                className="hover-parallax shadow-lift"
+              />
+            ))}
+          </div>
+        </section>
+
+        {/* Contact Information */}
+<section
+  className="section alt"
+  ref={(el) => (sectionsRef.current[8] = el)}
+>
+  <h2>Contact Information</h2>
+
+    <p>
+  <strong>Team Leader:</strong> 0718507433 / 0767850469
+</p>
+
+<p>
+  <strong>Email:</strong>{" "}
+  <a href="mailto:inca@neatsolutions.asia">inca@neatsolutions.asia</a>
+</p>
+
+  <p>
+    <strong>Web:</strong>{" "}
+    <a href="https://incaceylon.com/" target="_blank" rel="noopener noreferrer">
+      incaceylon.com
+    </a>
+  </p>
+
+  <p>
+    <strong>Web:</strong>{" "}
+    <a href="http://www.neatsolutions.asia" target="_blank" rel="noopener noreferrer">
+      www.neatsolutions.asia
+    </a>
+  </p>
+</section>
+
       </main>
 
       <footer className="footer">
