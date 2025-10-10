@@ -1,67 +1,52 @@
 :root {
   --green-600: #1f6e4a;
   --green-400: #3fa172;
+  --blue-600: #1e3a5f;
+  --blue-400: #3a6fa1;
   --sand-100: #f5efe6;
   --dark-700: #1f2933;
   --muted: #6b7280;
   --accent: #f6c85f;
-  --text-light: #ffffff;
-  --text-dark: #1a1a1a;
 }
 
-/* ---------- Base ---------- */
+/* Global */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   background: linear-gradient(180deg, var(--sand-100), #ffffff);
   color: var(--dark-700);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-/* ---------- Section Backgrounds with Readability Overlay ---------- */
-section {
-  position: relative;
-  padding: 40px 20px;
-  overflow: hidden;
+/* App wrapper */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center 0;
 }
 
-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.3); /* soft overlay for readability */
-  z-index: 0;
-}
-
-section * {
-  position: relative;
-  z-index: 1;
-  mix-blend-mode: difference; /* dynamic contrast! */
-  color: white; /* fallback for darker bg */
-}
-
-/* fallback for light backgrounds */
-section.light * {
-  mix-blend-mode: normal;
-  color: var(--dark-700);
-}
-
-/* ---------- Header ---------- */
+/* Header */
 .header {
-  background: linear-gradient(90deg, #2a4b8d, #1f6e4a);
-  color: var(--text-light);
-  padding: 20px;
+  background: linear-gradient(135deg, var(--blue-400), var(--blue-600));
+  color: white;
+  padding: 24px 16px;
   text-align: center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Brand (logo + site name) */
 .brand {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  margin-bottom: 6px;
+  gap: 10px;
+  margin-bottom: 8px;
 }
 
 .logo {
@@ -71,104 +56,112 @@ section.light * {
 
 .header h1 {
   margin: 0;
-  font-size: 28px;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 .header p {
   margin: 0;
-  font-size: 14px;
+  font-size: 15px;
   color: var(--sand-100);
   font-style: italic;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
-/* ---------- Main Content ---------- */
+/* Main */
 main {
   flex: 1;
-  padding: 24px;
+  padding: 20px;
 }
 
-/* ---------- Section Style ---------- */
+/* Section styles */
 .section {
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(63, 161, 114, 0.18); /* 🌿 Soft green tint */
   box-shadow: 0 6px 18px rgba(16, 24, 32, 0.06);
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.8s ease-out;
+  padding: 20px;
   backdrop-filter: blur(6px);
 }
 
 .section.alt {
-  background: rgba(63, 161, 114, 0.2);
+  background: rgba(31, 110, 74, 0.22); /* Slightly deeper green for variation */
 }
 
 .section h2 {
   margin-top: 0;
-  font-size: 1.8rem;
-  letter-spacing: 0.02em;
-}
-
-/* ---------- Links ---------- */
-a {
+  color: var(--green-600);
   font-weight: 600;
-  text-decoration: none;
-  color: var(--accent);
-  transition: all 0.3s ease;
+  border-bottom: 2px solid rgba(31, 110, 74, 0.2);
+  padding-bottom: 4px;
 }
 
-a:hover {
-  color: var(--green-400);
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
-}
-
-/* ---------- Footer ---------- */
-.footer {
-  background: linear-gradient(90deg, var(--green-400), var(--green-600));
-  color: var(--text-light);
-  text-align: center;
-  padding: 14px;
-  font-size: 14px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-/* ---------- Image Styles ---------- */
-img:not(.logo) {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin: 10px auto;
-  cursor: pointer;
-  display: block;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-img:not(.logo):hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-}
-
-/* ---------- Grid ---------- */
-.image-grid {
-  display: grid;
-  gap: 16px;
+/* Side-by-side layout */
+.side-by-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 @media (min-width: 768px) {
-  .image-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .side-by-side {
+    flex-direction: row;
+    align-items: center;
+  }
+  .side-by-side .text,
+  .side-by-side .image-box {
+    flex: 1;
   }
 }
 
-@media (min-width: 1200px) {
-  .image-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
+/* Lists and links */
+.section ul {
+  list-style: disc;
+  margin-left: 20px;
+  color: var(--muted);
 }
 
-/* ---------- Lightbox Overlay ---------- */
+.section a {
+  color: var(--green-600);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.section a:hover {
+  color: var(--green-400);
+}
+
+/* Footer */
+.footer {
+  background: var(--green-400);
+  color: white;
+  text-align: center;
+  padding: 14px;
+  font-size: 14px;
+}
+
+/* Images */
+img:not(.logo) {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  margin: 10px auto;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover scale + lift + shadow */
+.shadow-lift:hover {
+  transform: scale(1.03) translateY(-5px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Lightbox */
 .lightbox-overlay {
   position: fixed;
   top: 0;
@@ -201,10 +194,10 @@ img:not(.logo):hover {
   transform: scale(1.03);
 }
 
-/* ---------- Section Entry Animations ---------- */
+/* Animations */
 .section.slide-fade-in {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0) translateY(0);
 }
 
 .section:nth-child(even).slide-fade-in {
@@ -215,17 +208,28 @@ img:not(.logo):hover {
   transform: translateX(-30px);
 }
 
-/* ---------- Responsive Adjustments ---------- */
+/* Smart contrast text classes (controlled via JS) */
+.text-light {
+  color: #ffffff !important;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+.text-dark {
+  color: var(--dark-700) !important;
+}
+
+/* Compact layout on mobile */
 @media (max-width: 600px) {
+  main {
+    padding: 16px;
+  }
+
   .header h1 {
     font-size: 22px;
   }
 
-  .brand {
-    flex-direction: column;
-  }
-
   .section {
-    padding: 24px 12px;
+    padding: 16px;
+    margin-bottom: 20px;
   }
 }
