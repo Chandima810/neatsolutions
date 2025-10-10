@@ -9,49 +9,53 @@
   --text-dark: #1a1a1a;
 }
 
-/* Base setup */
+/* ---------- Base ---------- */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   background: linear-gradient(180deg, var(--sand-100), #ffffff);
   color: var(--dark-700);
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* General background fix for readability */
+/* ---------- Section Backgrounds with Readability Overlay ---------- */
 section {
   position: relative;
-  z-index: 1;
+  padding: 40px 20px;
+  overflow: hidden;
 }
 
 section::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.25); /* slight overlay for readability */
-  z-index: -1;
+  background: rgba(0, 0, 0, 0.3); /* soft overlay for readability */
+  z-index: 0;
 }
 
-/* Parallax app layout */
-.app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center 0;
+section * {
+  position: relative;
+  z-index: 1;
+  mix-blend-mode: difference; /* dynamic contrast! */
+  color: white; /* fallback for darker bg */
 }
 
-/* Header */
+/* fallback for light backgrounds */
+section.light * {
+  mix-blend-mode: normal;
+  color: var(--dark-700);
+}
+
+/* ---------- Header ---------- */
 .header {
-  background: linear-gradient(90deg, var(--green-600), var(--green-400));
+  background: linear-gradient(90deg, #2a4b8d, #1f6e4a);
   color: var(--text-light);
   padding: 20px;
   text-align: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Brand (logo + site name) */
 .brand {
   display: flex;
   align-items: center;
@@ -68,7 +72,6 @@ section::before {
 .header h1 {
   margin: 0;
   font-size: 28px;
-  color: var(--text-light);
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -80,18 +83,17 @@ section::before {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
-/* Main content */
+/* ---------- Main Content ---------- */
 main {
   flex: 1;
   padding: 24px;
 }
 
-/* Sections */
+/* ---------- Section Style ---------- */
 .section {
   margin-bottom: 32px;
-  padding: 20px;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 6px 18px rgba(16, 24, 32, 0.06);
   opacity: 0;
   transform: translateY(30px);
@@ -99,61 +101,30 @@ main {
   backdrop-filter: blur(6px);
 }
 
-/* Alternate section style */
 .section.alt {
-  background: rgba(63, 161, 114, 0.15);
+  background: rgba(63, 161, 114, 0.2);
 }
 
-/* Side-by-side layout */
-.side-by-side {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-@media (min-width: 768px) {
-  .side-by-side {
-    flex-direction: row;
-    align-items: center;
-  }
-  .side-by-side .text,
-  .side-by-side .image-box {
-    flex: 1;
-  }
-}
-
-/* Section titles */
 .section h2 {
   margin-top: 0;
-  color: var(--green-600);
-  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.3);
+  font-size: 1.8rem;
+  letter-spacing: 0.02em;
 }
 
-/* Paragraphs */
-.section p {
-  color: var(--text-dark);
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
-}
-
-/* Lists and links */
-.section ul {
-  list-style: disc;
-  margin-left: 20px;
-  color: var(--muted);
-}
-
-.section a {
-  color: var(--green-600);
+/* ---------- Links ---------- */
+a {
   font-weight: 600;
   text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.section a:hover {
   color: var(--accent);
+  transition: all 0.3s ease;
 }
 
-/* Footer */
+a:hover {
+  color: var(--green-400);
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+/* ---------- Footer ---------- */
 .footer {
   background: linear-gradient(90deg, var(--green-400), var(--green-600));
   color: var(--text-light);
@@ -163,29 +134,23 @@ main {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* Images */
+/* ---------- Image Styles ---------- */
 img:not(.logo) {
   max-width: 100%;
   height: auto;
-  display: block;
   border-radius: 8px;
   margin: 10px auto;
   cursor: pointer;
+  display: block;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Hover scale + lift + shadow */
-.shadow-lift:hover {
-  transform: scale(1.03) translateY(-5px);
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
-}
-
-/* Lightbox hover effect */
 img:not(.logo):hover {
   transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* Gallery grid */
+/* ---------- Grid ---------- */
 .image-grid {
   display: grid;
   gap: 16px;
@@ -203,7 +168,7 @@ img:not(.logo):hover {
   }
 }
 
-/* Lightbox overlay */
+/* ---------- Lightbox Overlay ---------- */
 .lightbox-overlay {
   position: fixed;
   top: 0;
@@ -236,10 +201,10 @@ img:not(.logo):hover {
   transform: scale(1.03);
 }
 
-/* Section entry animations */
+/* ---------- Section Entry Animations ---------- */
 .section.slide-fade-in {
   opacity: 1;
-  transform: translateX(0) translateY(0);
+  transform: translateY(0);
 }
 
 .section:nth-child(even).slide-fade-in {
@@ -250,9 +215,17 @@ img:not(.logo):hover {
   transform: translateX(-30px);
 }
 
-/* Staggered fade-in for section children */
-.fade-slide-in {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-  transition: transform 0.8s ease, opacity 0.8s ease;
+/* ---------- Responsive Adjustments ---------- */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 22px;
+  }
+
+  .brand {
+    flex-direction: column;
+  }
+
+  .section {
+    padding: 24px 12px;
+  }
 }
