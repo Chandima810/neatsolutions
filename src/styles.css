@@ -3,7 +3,7 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  background-color: #f3f8f4;
+  background-color: #f4faf5; /* Soft neutral green-white background */
   color: #222;
   scroll-behavior: smooth;
 }
@@ -18,8 +18,9 @@ body, html {
 .header {
   text-align: center;
   padding: 60px 20px 40px;
-  background-color: #0b3d0b; /* Keep this perfect dark green */
+  background-color: #0b3d0b; /* Keep perfect dark green */
   color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
@@ -40,33 +41,50 @@ body, html {
 
 .header p {
   font-size: 1.1em;
-  color: #d8f3d1;
+  color: #d9f7d4;
 }
 
 /* ---------- Sections ---------- */
 .section {
-  background: rgba(212, 237, 218, 0.85); /* 🌿 Soft green tint replacing gray */
-  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    rgba(213, 247, 223, 0.97) 0%,
+    rgba(183, 236, 198, 0.97) 100%
+  ); /* 🌿 light → pastel green gradient */
+  border-radius: 20px;
   margin: 50px auto;
   max-width: 1000px;
   padding: 40px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-  transition: transform 0.4s ease, opacity 0.6s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08), 
+              inset 0 0 12px rgba(255, 255, 255, 0.4); /* subtle inner glow */
+  transition: transform 0.4s ease, opacity 0.6s ease, box-shadow 0.3s ease;
   opacity: 0;
   transform: translateY(50px);
 }
 
+.section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12), 
+              inset 0 0 14px rgba(255, 255, 255, 0.5);
+}
+
 .section.alt {
-  background: rgba(191, 232, 201, 0.85); /* 🌿 Slightly deeper green tint for alternating sections */
+  background: linear-gradient(
+    135deg,
+    rgba(193, 240, 208, 0.96) 0%,
+    rgba(160, 227, 182, 0.96) 100%
+  ); /* 🌱 slightly stronger tone for alternate cards */
 }
 
 .section h2 {
   color: #0b3d0b;
   text-align: center;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
-.section p, .section ul {
+.section p, 
+.section ul {
   font-size: 1.05em;
   line-height: 1.7;
   color: #222;
@@ -74,8 +92,9 @@ body, html {
 
 /* ---------- Links ---------- */
 a {
-  color: #0b3d0b; /* keep same link color */
+  color: #0b3d0b; /* Professional green for links */
   text-decoration: none;
+  font-weight: 500;
 }
 
 a:hover {
@@ -117,11 +136,12 @@ a:hover {
   width: 100%;
   border-radius: 12px;
   cursor: pointer;
-  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
 }
 
 .gallery img:hover {
   transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* ---------- Lightbox ---------- */
@@ -136,6 +156,7 @@ a:hover {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.4s ease;
+  z-index: 999;
 }
 
 .lightbox-overlay.active {
@@ -147,6 +168,7 @@ a:hover {
   max-width: 90%;
   max-height: 90%;
   border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
 }
 
 /* ---------- Animations ---------- */
@@ -173,9 +195,10 @@ a:hover {
 /* ---------- Footer ---------- */
 .footer {
   text-align: center;
-  background-color: #0b3d0b; /* same dark green */
+  background-color: #0b3d0b; /* unchanged dark green */
   color: white;
   padding: 25px 10px;
   font-size: 0.95em;
   margin-top: 60px;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
 }
