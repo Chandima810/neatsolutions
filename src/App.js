@@ -273,7 +273,7 @@ export default function App() {
   <h2>Contact Information</h2>
 
     <p>
-  <strong>Team Leader:</strong> 0718507433 / 0767850469
+  <strong>Team Leader:</strong> 0718607433 / 0767850469
 </p>
 
 <p>
