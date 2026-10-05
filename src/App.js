@@ -97,9 +97,9 @@ export default function App() {
       <header className="header">
         <div className="brand">
           <img src={logo} alt="NEAT SOLUTION logo" className="logo" />
-          <h1>INCA CEYLON (PVT) LTD</h1>
+          <h1>PRO-CAPA NEXT LEVEL PROFESSIONAL EXPERIENCE</h1>
         </div>
-        <p>Green Plant Project – Sustainable Approach to Green Development</p>
+        <p>Brain-Informed Structured Thinking – From Problems to Performance Advancement</p>
       </header>
 
       <main>
@@ -108,28 +108,30 @@ export default function App() {
           className="section"
           ref={(el) => (sectionsRef.current[0] = el)}
         >
-          <h2>Company Overview</h2>
+          <h2>WELCOME TO THE WORKSHOP</h2>
           <p>
-            Inca Ceylon, was incorporated on 21st October 2024 as a subsidiary of Neat Solutions Pvt Ltd, has evolved into a forward-looking, climate-compliant company dedicated to eco-friendly green development. Building on the strong foundation of its founder, Inca Ceylon operates model plant nurseries serving both local and international landscaping markets. 
-<p>The Team Leader of the project, Cmde (Rtd) Tony Perera, a BSc. (Agriculture) graduate from University of Peradeniya is a leading horticulturist with experience in landscaping projects such as Arcade- Torrington square, Gregory lake– Nuwaraeliya,  Viharamahadevi Park– Colombo 07, provides his fulltime expertise for our sustainable cultivation, renewable energy integration, and climate-resilient practices, ensuring that every step of our growth contributes to a greener and more sustainable future.</p>
+  This learning portal accompanies the professional development workshop.
+  It introduces a practical way to understand problems, examine their causes,
+  take appropriate corrective action and improve professional performance.
+</p>
 
-          </p>
+<p>
+  Facilitator, Chandima Gunasena, BSc. (Agriculture), MSc in Green Technology,
+  M.Phil in Integrated Water Resources Management, is a Solution Architect
+  with experience in Small and Medium-Scale Industrial Development.
+</p>
         </section>
 
         <section
           className="section alt"
           ref={(el) => (sectionsRef.current[1] = el)}
         >
-          <h2>Vision & Mission</h2>
+          <h2>WHY BRAIN-INFORMED STRUCTURED THINKING?</h2>
           <p>
-            <strong>Vision:</strong> To become a leading global provider of
-            sustainable tropical and ornamental plants.
+            <strong>Problem Solving:</strong> Professional problems are rarely solved by information alone. They require observation, questioning, analysis and deliberate decision-making.
           </p>
           <p>
-            <strong>Mission:</strong> To cultivate and supply high-quality,
-            climate-resilient plants using organic and sustainable practices
-            while meeting international standards.
-          </p>
+            <strong>Brain Informed:</strong>Brain-informed structured thinking helps us move from immediate reaction to structured professional action.</p>
         </section>
 
         {/* Product Portfolio */}
@@ -138,14 +140,24 @@ export default function App() {
           ref={(el) => (sectionsRef.current[2] = el)}
         >
           <div className="text">
-            <h2>Product Portfolio</h2>
+            <h2>PRO-CAPA™ </h2>
+              <p>
+    PRO-CAPA™ (Professional Corrective Action & Performance Advancement)
+    is a structured framework for turning workplace problems into opportunities
+    for learning, corrective action and improved professional performance.
+    It guides participants from understanding a problem to achieving and
+    sustaining measurable improvement.
+  </p>
             <ul>
-              <li>Export-standard tropical plants</li>
-              <li>Ornamental plants (Foliage & Flowering)</li>
-              <li>Australian grass varieties (Zoysia)</li>
-              <li>Malaysian grass varieties</li>
-              <li>Salt-tolerant plants for saline climates</li>
-            </ul>
+    <li>Diagnose — Understand what is actually happening</li>
+    <li>Analyse — Examine the evidence and contributing factors</li>
+    <li>Identify Root Cause — Find the underlying cause</li>
+    <li>Correct — Develop the appropriate corrective response</li>
+    <li>Implement — Put the corrective action into practice</li>
+    <li>Measure — Determine what has changed</li>
+    <li>Verify — Confirm that the improvement is real and sustained</li>
+    <li>Improve — Use learning to advance performance</li>
+  </ul>
           </div>
           <div className="image-box">
             <img
@@ -163,14 +175,23 @@ export default function App() {
           ref={(el) => (sectionsRef.current[3] = el)}
         >
           <div className="text">
-            <h2>Production Standards</h2>
+            <h2>FROM PROBLEM TO PERFORMANCE</h2>
+            <p>
+    Every problem represents a gap between the current condition and the
+    desired condition. PRO-CAPA™ helps us convert that gap into a structured
+    improvement journey — from identifying the problem to achieving measurable
+    and sustainable performance improvement.
+  </p>
             <ul>
-              <li>Sterilized coir dust as planting media</li>
-              <li>Compliance with National Plant Quarantine Service (Sri Lanka)</li>
-              <li>Pest, fungal, bacterial, and nematode-free</li>
-              <li>Organic-based fertilizers and agro-inputs</li>
-              <li>Sterilized pots and grow bags</li>
-            </ul>
+    <li>Identify the Problem — Define what is actually wrong</li>
+    <li>Understand the Current Condition — Gather facts and evidence</li>
+    <li>Find the Root Cause — Look beyond the symptoms</li>
+    <li>Take Corrective Action — Develop an appropriate solution</li>
+    <li>Implement the Change — Convert the decision into action</li>
+    <li>Measure the Result — Determine whether performance has improved</li>
+    <li>Verify the Improvement — Confirm that the change is sustained</li>
+    <li>Advance Performance — Learn, improve and move to the next level</li>
+  </ul>
           </div>
           <div className="image-box">
             <img
@@ -188,13 +209,21 @@ export default function App() {
           ref={(el) => (sectionsRef.current[4] = el)}
         >
           <div className="text">
-            <h2>Sustainable Practices</h2>
+            <h2>PRACTICAL THINKING TOOLS</h2>
+            <p>During the workshop, participants will practise structured thinking tools
+    that help transform observations and problems into evidence-based decisions
+    and practical actions.</p>
+
             <ul>
-              <li>Organic fertilizers to protect ecosystems</li>
-              <li>Renewable energy to minimize carbon footprint</li>
-              <li>Sterilization for sustainable production</li>
-              <li>Socially responsible employment practices</li>
-            </ul>
+    <li>Problem Identification — Clearly define what needs attention</li>
+    <li>Observation & Evidence — Separate facts from assumptions</li>
+    <li>Problem Analysis — Examine the situation systematically</li>
+    <li>Root Cause Analysis — Identify why the problem is occurring</li>
+    <li>Corrective Action Planning — Decide what should be done</li>
+    <li>Implementation Planning — Convert decisions into action</li>
+    <li>Performance Measurement — Determine whether the action worked</li>
+    <li>Verification & Improvement — Sustain and advance the result</li>
+  </ul>
           </div>
           <div className="image-box">
             <img
@@ -212,14 +241,28 @@ export default function App() {
           ref={(el) => (sectionsRef.current[5] = el)}
         >
           <div className="text">
-            <h2>Competitive Advantages</h2>
+            <h2>FOUR PROFESSIONAL PATHWAYS</h2>
             <ul>
-              <li>Compliance with international phytosanitary regulations</li>
-              <li>Capability to fulfill bulk export orders</li>
-              <li>Climate-resilient plant varieties</li>
-              <li>Eco-friendly and sustainable inputs</li>
-              <li>Dedicated R&D for continuous improvement</li>
-            </ul>
+    <li>
+      <strong>SME Owner</strong> — Improve business performance and solve
+      operational bottlenecks.
+    </li>
+
+    <li>
+      <strong>Executive / Leader</strong> — Improve decisions, leadership
+      and organizational performance.
+    </li>
+
+    <li>
+      <strong>Industrial Worker</strong> — Solve workplace problems
+      systematically and contribute to continuous improvement.
+    </li>
+
+    <li>
+      <strong>Shop / Self-employed Professional</strong> — Improve daily
+      operations, productivity and income-generating activities.
+    </li>
+  </ul>
           </div>
           <div className="image-box">
             <img
@@ -236,13 +279,44 @@ export default function App() {
           className="section"
           ref={(el) => (sectionsRef.current[6] = el)}
         >
-          <h2>Target Markets</h2>
+          <h2>WORKSHOP STUDY RESOURCES</h2>
+          <p>
+    Use this portal as your learning companion before, during and after the
+    workshop. The resources are designed to help you understand the framework,
+    practise structured thinking and apply your learning to real professional
+    situations.
+  </p>
           <ul>
-            <li>Export customers (Europe, Middle East, Asia-Pacific)</li>
-            <li>Local landscaping companies and developers</li>
-            <li>Government and private sector green projects</li>
-            <li>Eco-conscious home gardeners</li>
-          </ul>
+    <li>
+      <strong>Study Notes</strong> — Review the key concepts and principles
+      introduced during the workshop.
+    </li>
+
+    <li>
+      <strong>Case Study</strong> — Follow a practical problem through the
+      PRO-CAPA™ process from diagnosis to performance advancement.
+    </li>
+
+    <li>
+      <strong>Worksheets</strong> — Use structured worksheets to analyse your
+      own problems and develop appropriate actions.
+    </li>
+
+    <li>
+      <strong>Personal Transformation Card</strong> — Record your current
+      situation, desired next level and planned actions.
+    </li>
+
+    <li>
+      <strong>Practice Exercises</strong> — Strengthen your structured
+      thinking by applying the framework to practical situations.
+    </li>
+  </ul>
+
+  <p>
+    The purpose is simple: <strong>learn the framework, practise the thinking,
+    apply it to your work and create measurable improvement.</strong>
+  </p>
         </section>
 
         {/* Photo Gallery with Lightbox */}
@@ -250,13 +324,13 @@ export default function App() {
           className="section gallery"
           ref={(el) => (sectionsRef.current[7] = el)}
         >
-          <h2>Our Nursery</h2>
+          <h2>Gallery</h2>
           <div className="image-grid">
             {nurseryImages.map((src, index) => (
               <img
                 key={index}
                 src={src}
-                alt={`Nursery ${index + 1}`}
+                alt={`Workshop Resource ${index + 1}`}
                 onClick={() => setLightboxImage(src)}
                 ref={(el) => setImageRef(el, index + 4)}
                 className="hover-parallax shadow-lift"
@@ -264,51 +338,202 @@ export default function App() {
             ))}
           </div>
         </section>
+                  {/* Books by Chandima Gunasena */}
+         
+<section
+  className="section"
+  ref={(el) => (sectionsRef.current[8] = el)}
+>
+  <div className="text">
+    <h2>BOOKS BY CHANDIMA GUNASENA</h2>
+
+    <p>
+      These books provide additional reading for participants who wish to
+      explore creative thinking, structured problem solving, environmental
+      data, greenhouse gas monitoring and practical industrial improvement
+      beyond the workshop.
+    </p>
+
+    {/* Book 1 */}
+    <div className="book-card">
+      <h3>Curiosity Builds a Creative Mind</h3>
+
+      <p>
+        <strong>
+          Brain-Informed Innovation Framework
+        </strong>
+      </p>
+
+      <p>
+        <em>
+          Curiosity Builds a Creative Mind</em> introduces a brain-informed
+        approach to developing curiosity, creativity, structured thinking,
+        systems thinking and innovation.
+      </p>
+
+      <p>
+        The book explores how curiosity can lead to observation, questioning,
+        creative thinking and practical innovation. It provides a foundation
+        for developing a mindset capable of understanding complex challenges
+        and creating meaningful solutions.
+      </p>
+
+      <p>
+        <strong>Key themes:</strong>
+        <br />
+        Curiosity • Creative Thinking • Brain-Informed Learning •
+        Systems Thinking • Innovation • Sustainability
+      </p>
+
+      <a
+        href="https://www.amazon.com/dp/B0H73QWYBL"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="amazon-button"
+      >
+        Buy on Amazon
+      </a>
+    </div>
+
+    {/* Book 2 */}
+    <div className="book-card">
+      <h3>From MRV to ISO Readiness</h3>
+
+      <p>
+        <strong>
+          A Simple Factory Manager’s Guide to Environmental Data,
+          GHG Monitoring and Certification Preparation
+        </strong>
+      </p>
+
+      <p>
+        Factories cannot improve what they do not measure.
+      </p>
+
+      <p>
+        This book provides a simple and practical pathway for factory
+        managers, environmental officers, engineers, accountants, production
+        officers, consultants and SME owners who want to move from scattered
+        factory records toward a reliable MRV system and ISO readiness.
+      </p>
+
+      <p>
+        MRV means <strong>Monitoring, Reporting and Verification</strong>.
+        In simple factory language, this means monitoring what happens inside
+        the factory, reporting the information in a useful way, and verifying
+        the records so that the data can be trusted.
+      </p>
+
+      <p>
+        The guide shows how familiar factory records such as electricity
+        bills, fuel invoices, water meter readings, waste records, production
+        reports and logbooks can be converted into environmental data,
+        greenhouse gas evidence and management information.
+      </p>
+
+      <p>
+        <strong>Main pathway:</strong>
+        <br />
+        Measure → Report → Verify → Improve → Prepare for ISO
+      </p>
+
+      <p>
+        The book covers practical approaches to factory-level MRV,
+        environmental and GHG data sources, Scope 1 and Scope 2 emissions,
+        Scope 3 concepts, evidence systems, ISO 14001 readiness and
+        ISO 14064-1 GHG inventory preparation.
+      </p>
+
+      <p>
+        It is particularly useful for small and medium factories that may
+        not have large sustainability teams, expensive software or full-time
+        consultants.
+      </p>
+
+      <p>
+        <strong>Key themes:</strong>
+        <br />
+        MRV • Environmental Data • GHG Monitoring • Scope 1 &amp; 2 •
+        Scope 3 • Evidence Management • ISO 14001 Readiness •
+        ISO 14064-1 • Continuous Improvement
+      </p>
+
+      <a
+        href="https://www.amazon.com/dp/B0H8MPBCTP"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="amazon-button"
+      >
+        Buy on Amazon
+      </a>
+    </div>
+
+    <p>
+      <strong>
+        Together, these books reflect two complementary dimensions of
+        professional development: developing the creative and structured
+        mind, and applying structured thinking to real industrial and
+        environmental challenges.
+      </strong>
+    </p>
+  </div>
+</section>
 
         {/* Contact Information */}
 <section
   className="section alt"
-  ref={(el) => (sectionsRef.current[8] = el)}
+  ref={(el) => (sectionsRef.current[9] = el)}
 >
-  <h2>Contact Information</h2>
-
-    <p>
-  <strong>Team Leader :</strong> +94 71 860 7433 / +94 76 785 0469
-</p>
-
-<p>
-  <strong>Email:</strong>{" "}
-  <a href="mailto:inca@neatsolutions.asia">inca@neatsolutions.asia</a>
-</p>
+  <h2>WORKSHOP INFORMATION & SUPPORT</h2>
 
   <p>
-    <strong>Web:</strong>{" "}
-    <a href="https://incaceylon.com/" target="_blank" rel="noopener noreferrer">
-      incaceylon.com
+    <strong>Facilitator:</strong> Chandima Gunasena
+  </p>
+
+  <p>
+    <strong>Workshop:</strong> Brain-Informed Structured Thinking Framework
+  </p>
+
+  <p>
+    <strong>Methodology:</strong> PRO-CAPA™ — Professional Corrective Action
+    &amp; Performance Advancement
+  </p>
+
+  <p>
+    <strong>Learning Portal:</strong>{" "}
+    <a
+      href="https://solutionswaterminds.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Solutions WaterMinds
     </a>
   </p>
 
   <p>
-    <strong>Web:</strong>{" "}
-    <a href="http://www.neatsolutions.asia" target="_blank" rel="noopener noreferrer">
-      www.neatsolutions.asia
-    </a>
+    This portal provides study materials and practical resources to support
+    your learning before, during and after the workshop.
   </p>
 </section>
 
-      </main>
+</main>
 
-      <footer className="footer">
-        <p>© INCA CEYLON — Growing greener futures, sustainably.</p>
-      </footer>
+<footer className="footer">
+  <p>
+    © 2026 Brain-Informed Structured Thinking Framework —
+    Learn. Think. Apply. Improve.
+  </p>
+</footer>
 
-      {/* Lightbox */}
-      <div
-        className={`lightbox-overlay ${lightboxImage ? "active" : ""}`}
-        onClick={() => setLightboxImage(null)}
-      >
-        {lightboxImage && <img src={lightboxImage} alt="Enlarged Nursery" />}
-      </div>
+{/* Lightbox */}
+<div
+  className={`lightbox-overlay ${lightboxImage ? "active" : ""}`}
+  onClick={() => setLightboxImage(null)}
+>
+  {lightboxImage && (
+    <img src={lightboxImage} alt="Workshop Resource" />
+  )}
+</div>
     </div>
   );
 }
