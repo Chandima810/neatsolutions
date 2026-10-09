@@ -468,6 +468,48 @@ export default function App() {
       </a>
     </div>
 
+     {/* Book 3 */}
+    <div className="book-card">
+      <h3>PRO-CAPA™ — Professional Corrective Action &amp; Performance Advancement</h3>
+
+      <p>
+        <strong>
+          Volume I | Brain-Informed Structured Thinking
+        </strong>
+      </p>
+
+      <p>
+        <em>PRO-CAPA™ — Professional Corrective Action &amp; Performance
+    Advancement</em> introduces a structured approach to understanding
+    professional problems, identifying their root causes, implementing
+    corrective actions and advancing performance.
+      </p>
+
+      <p>
+        The book presents a practical methodology that connects structured
+    thinking with professional development. It guides readers through
+    eight stages: Diagnose, Analyse, Identify Root Cause, Correct,
+    Implement, Measure, Verify and Improve.
+      </p>
+
+      <p>
+        <strong>Key themes:</strong>
+        <br />
+        Brain-Informed Thinking • Problem Diagnosis • Root Cause Analysis •
+    Corrective Action • Implementation • Performance Measurement •
+    Verification • Continuous Improvement
+      </p>
+
+      <a
+        href="https://www.amazon.com/dp/B0HMFVY4R6"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="amazon-button"
+      >
+        Buy on Amazon
+      </a>
+    </div>
+
     <p>
       <strong>
         Together, these books reflect two complementary dimensions of
