@@ -122,10 +122,46 @@ export default function App() {
 </p>
         </section>
 
+        {/* About the Founder and CV */}
         <section
           className="section alt"
           ref={(el) => (sectionsRef.current[1] = el)}
         >
+          <h2>ABOUT THE FOUNDER &amp; PRO-CAPA™ FACILITATOR</h2>
+
+          <p>
+            Chandima Gunasena is an interdisciplinary professional whose
+            background includes agricultural science, integrated water
+            resources management, green technology and industrial development.
+          </p>
+
+          <p>
+            He presents PRO-CAPA™ — Professional Corrective Action &amp;
+            Performance Advancement — as a structured approach to understanding
+            problems, identifying root causes, taking corrective action and
+            improving professional performance.
+          </p>
+
+          <p>
+            <strong>Qualifications:</strong> BSc in Agriculture, MPhil in
+            Integrated Water Resources Management, and MSc in Green Technology.
+          </p>
+
+          <a
+            href="https://drive.google.com/file/d/1CvlXFm3ktMUqMDGrPen7SOY-UU91ry0I/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="amazon-button"
+          >
+            View My Curriculum Vitae
+          </a>
+        </section>
+
+        <section
+          className="section alt"
+          ref={(el) => (sectionsRef.current[2] = el)}
+        >
+
           <h2>WHY BRAIN-INFORMED STRUCTURED THINKING?</h2>
           <p>
             <strong>Problem Solving:</strong> Professional problems are rarely solved by information alone. They require observation, questioning, analysis and deliberate decision-making.
