@@ -311,50 +311,72 @@ export default function App() {
           </div>
         </section>
 
-        {/* Target Markets */}
-        <section
-          className="section"
-          ref={(el) => (sectionsRef.current[6] = el)}
-        >
-          <h2>WORKSHOP STUDY RESOURCES</h2>
-          <p>
-            Use this portal as your learning companion before, during and after the
-            workshop. The resources are designed to help you understand the framework,
-            practise structured thinking and apply your learning to real professional
-            situations.
-          </p>
-          <ul>
-            <li>
-              <strong>Study Notes</strong> — Review the key concepts and principles
-              introduced during the workshop.
-            </li>
+       {/* Workshops Conducted */}
+<section
+  className="section"
+  ref={(el) => (sectionsRef.current[6] = el)}
+>
+  <h2>WORKSHOPS CONDUCTED</h2>
 
-            <li>
-              <strong>Case Study</strong> — Follow a practical problem through the
-              PRO-CAPA™ process from diagnosis to performance advancement.
-            </li>
+  <p>
+    I have conducted professional consultancy, creativity development and
+    teachers training programmes across government institutions,
+    universities, schools and professional organisations. These engagements
+    focus on developing structured thinking, creativity, problem-solving
+    capabilities and practical application.
+  </p>
 
-            <li>
-              <strong>Worksheets</strong> — Use structured worksheets to analyse your
-              own problems and develop appropriate actions.
-            </li>
+  <ul>
+    <li>
+      <strong>AFOLU MRV Consultant</strong> – Ministry of Environment
+    </li>
 
-            <li>
-              <strong>Personal Transformation Card</strong> — Record your current
-              situation, desired next level and planned actions.
-            </li>
+    <li>
+      <strong>Creativity Workshop</strong> – Lanka Association of Building
+      Services Engineers (LABSE)
+    </li>
 
-            <li>
-              <strong>Practice Exercises</strong> — Strengthen your structured
-              thinking by applying the framework to practical situations.
-            </li>
-          </ul>
+    <li>
+      <strong>Creativity Workshop</strong> – Samudradevi Balika Vidyalaya,
+      Nugegoda
+    </li>
 
-          <p>
-            The purpose is simple: <strong>learn the framework, practise the thinking,
-            apply it to your work and create measurable improvement.</strong>
-          </p>
-        </section>
+    <li>
+      <strong>Creativity Workshop</strong> – Industry Interaction Cell for
+      Computing and Technology (IICFCT), University of Kelaniya
+    </li>
+
+    <li>
+      <strong>Creativity Workshop</strong> – Gampaha Wickramarachchi
+      University of Indigenous Medicine (GWUIM)
+    </li>
+
+    <li>
+      <strong>Creativity Workshop</strong> – Department of Biosystems
+      Technology, Faculty of Technology, University of Sri Jayewardenepura
+    </li>
+
+    <li>
+      <strong>Creativity Workshop</strong> – Department of Mechanical
+      Engineering, Faculty of Engineering, Open University of Sri Lanka
+    </li>
+
+    <li>
+      <strong>Creativity Workshop</strong> – Vocational Training Authority
+      of Sri Lanka
+    </li>
+
+    <li>
+      <strong>Teachers Training Workshop</strong> – Ceylon Campus
+    </li>
+  </ul>
+
+  <p>
+    These engagements reflect the practical application of creativity
+    development and structured-thinking approaches in educational,
+    professional and institutional environments.
+  </p>
+</section>
 
         {/* Photo Gallery with Lightbox */}
         <section
