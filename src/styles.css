@@ -1,9 +1,14 @@
-/* ---------- General Layout ---------- */
-body, html {
+
+/* ==========================================
+   PRO-CAPA™ WEBSITE — MAIN STYLESHEET
+   ========================================== */
+
+body,
+html {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  background-color: #d4f7d9; /* Soft neutral green-white background */
+  background-color: #d4f7d9;
   color: #222;
   scroll-behavior: smooth;
 }
@@ -15,10 +20,11 @@ body, html {
 }
 
 /* ---------- Header ---------- */
+
 .header {
   text-align: center;
   padding: 60px 20px 40px;
-  background-color: #0b3d0b; /* Keep perfect dark green */
+  background-color: #0b3d0b;
   color: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -45,27 +51,38 @@ body, html {
 }
 
 /* ---------- Sections ---------- */
+
 .section {
   background: linear-gradient(
     135deg,
     rgba(213, 247, 223, 0.7) 0%,
     rgba(183, 236, 198, 0.7) 100%
-  ); /* 🌿 More transparent green gradient */
+  );
+
   border-radius: 20px;
   margin: 50px auto;
   max-width: 1000px;
   padding: 40px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08),
-              inset 0 0 12px rgba(255, 255, 255, 0.4); /* subtle inner glow */
-  transition: transform 0.4s ease, opacity 0.6s ease, box-shadow 0.3s ease;
-  opacity: 0.0001;
-  transform: translateY(50px);
+
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.08),
+    inset 0 0 12px rgba(255, 255, 255, 0.4);
+
+  transition:
+    transform 0.4s ease,
+    opacity 0.6s ease,
+    box-shadow 0.3s ease;
+
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .section:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12),
-              inset 0 0 14px rgba(255, 255, 255, 0.5);
+
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.12),
+    inset 0 0 14px rgba(255, 255, 255, 0.5);
 }
 
 .section.alt {
@@ -73,7 +90,7 @@ body, html {
     135deg,
     rgba(193, 240, 208, 0.65) 0%,
     rgba(160, 227, 182, 0.65) 100%
-  ); /* 🌱 Slightly more transparent for alternate cards */
+  );
 }
 
 .section h2 {
@@ -88,12 +105,13 @@ body, html {
   font-size: 1.05em;
   line-height: 1.7;
   color: #222;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* subtle shadow for readability */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
 
 /* ---------- Links ---------- */
+
 a {
-  color: #0b3d0b; /* Professional green for links */
+  color: #0b3d0b;
   text-decoration: none;
   font-weight: 500;
 }
@@ -102,7 +120,67 @@ a:hover {
   text-decoration: underline;
 }
 
+/* ---------- Professional Action Buttons ---------- */
+
+/*
+   Shared button styling:
+   - Amazon purchase links
+   - View My Curriculum Vitae
+*/
+
+.amazon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+  max-width: 100%;
+  box-sizing: border-box;
+
+  padding: 11px 24px;
+  margin-top: 12px;
+
+  background-color: #08785b;
+  color: #ffffff !important;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.3;
+
+  text-decoration: none !important;
+
+  border: 1px solid #08785b;
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.amazon-button:hover {
+  background-color: #0b3d0b;
+  border-color: #0b3d0b;
+  color: #ffffff !important;
+
+  text-decoration: none !important;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 4px 12px rgba(0, 60, 40, 0.18);
+}
+
+.amazon-button:focus-visible {
+  outline: 3px solid #d6a52b;
+  outline-offset: 3px;
+}
+
 /* ---------- Side-by-side Layout ---------- */
+
 .side-by-side {
   display: flex;
   flex-wrap: wrap;
@@ -127,9 +205,13 @@ a:hover {
 }
 
 /* ---------- Gallery ---------- */
+
 .gallery .image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, 1fr)
+  );
   gap: 20px;
 }
 
@@ -137,7 +219,9 @@ a:hover {
   width: 100%;
   border-radius: 12px;
   cursor: pointer;
-  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.3s ease;
 }
 
 .gallery img:hover {
@@ -146,16 +230,23 @@ a:hover {
 }
 
 /* ---------- Lightbox ---------- */
+
 .lightbox-overlay {
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
   background: rgba(0, 0, 0, 0.85);
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   visibility: hidden;
   opacity: 0;
+
   transition: opacity 0.4s ease;
   z-index: 999;
 }
@@ -173,6 +264,7 @@ a:hover {
 }
 
 /* ---------- Animations ---------- */
+
 .slide-fade-in {
   opacity: 1;
   transform: translateY(0);
@@ -181,10 +273,13 @@ a:hover {
 .fade-slide-in {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
 }
 
 /* ---------- Hover Effects ---------- */
+
 .shadow-lift {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
@@ -193,13 +288,202 @@ a:hover {
   transform: scale(1.03);
 }
 
+/* ==========================================
+   PRO-CAPA™ TRAINING PROGRAMMES
+   ========================================== */
+
+/*
+   The .programs-section also has the .section
+   class. Therefore, it uses the standard
+   translucent green section background.
+*/
+
+.programs-section {
+  border-top: 5px solid #0b3d0b;
+}
+
+.programs-heading {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 35px;
+}
+
+.programs-heading h2 {
+  color: #0b3d0b;
+  font-size: 1.8em;
+}
+
+.programs-heading p {
+  line-height: 1.7;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.program-card {
+  background: rgba(232, 247, 236, 0.94);
+  border: 1px solid rgba(0, 100, 70, 0.18);
+  border-top: 6px solid #08785b;
+  border-radius: 18px;
+
+  padding: 24px 20px;
+
+  box-shadow: 0 5px 18px rgba(0, 50, 30, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.13);
+}
+
+.program-number {
+  display: inline-block;
+  color: #a77b22;
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.program-card h3 {
+  color: #0b3d0b;
+  font-size: 1.15em;
+  line-height: 1.4;
+  margin: 5px 0 10px;
+}
+
+.program-card h4 {
+  color: #0b6650;
+  font-size: 0.95em;
+  margin: 0 0 12px;
+}
+
+.program-card p {
+  font-size: 0.95em;
+  line-height: 1.65;
+  color: #333;
+  text-shadow: none;
+}
+
+/* ---------- Responsive Tablet Layout ---------- */
+
+@media (max-width: 850px) {
+  .programs-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ---------- Responsive Mobile Layout ---------- */
+
+@media (max-width: 550px) {
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .programs-section {
+    padding: 25px 18px;
+  }
+
+  .programs-heading h2 {
+    font-size: 1.45em;
+  }
+
+  .section {
+    margin: 25px 12px;
+    padding: 25px 18px;
+  }
+
+  .brand h1 {
+    font-size: 1.5em;
+  }
+
+  .side-by-side {
+    flex-direction: column;
+  }
+}
+
 /* ---------- Footer ---------- */
+
 .footer {
   text-align: center;
-  background-color: #0b3d0b; /* unchanged dark green */
+  background-color: #0b3d0b;
   color: white;
   padding: 25px 10px;
   font-size: 0.95em;
   margin-top: 60px;
   box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
 }
+
+
+/* ==========================================
+   FOOTER CONTACT DETAILS — VISIBILITY FIX
+   ========================================== */
+
+.footer-contact {
+  display: block;
+  width: 100%;
+  max-width: 750px;
+  margin: 20px auto 0;
+  padding: 20px 15px 5px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+.footer-contact h3 {
+  color: #ffffff !important;
+  font-size: 1.25em;
+  margin: 0 0 16px;
+}
+
+.footer-contact p {
+  color: #ffffff !important;
+  font-size: 0.95em;
+  line-height: 1.8;
+  margin: 8px 0;
+  text-align: center;
+  text-shadow: none;
+}
+
+.footer-contact strong {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* Make every contact link clearly visible */
+
+.footer-contact a,
+.footer a.footer-contact-link,
+.footer-contact p a {
+  color: #d9f7a8 !important;
+  font-weight: 600;
+  text-decoration: none !important;
+  display: inline-block;
+  margin: 0 3px;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #ffffff !important;
+  text-decoration: underline !important;
+}
+
+/* Mobile display */
+
+@media (max-width: 550px) {
+  .footer-contact {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .footer-contact p {
+    font-size: 0.85em;
+    overflow-wrap: anywhere;
+  }
+}
+

@@ -110,16 +110,16 @@ export default function App() {
         >
           <h2>WELCOME TO THE WORKSHOP</h2>
           <p>
-  This learning portal accompanies the professional development workshop.
-  It introduces a practical way to understand problems, examine their causes,
-  take appropriate corrective action and improve professional performance.
-</p>
+            This learning portal accompanies the professional development workshop.
+            It introduces a practical way to understand problems, examine their causes,
+            take appropriate corrective action and improve professional performance.
+          </p>
 
-<p>
-  Facilitator, Chandima Gunasena, BSc. (Agriculture), MSc in Green Technology,
-  M.Phil in Integrated Water Resources Management, is a Solution Architect
-  with experience in Small and Medium-Scale Industrial Development.
-</p>
+          <p>
+            Facilitator, Chandima Gunasena, BSc. (Agriculture), MSc in Green Technology,
+            M.Phil in Integrated Water Resources Management, is a Solution Architect
+            with experience in Small and Medium-Scale Industrial Development.
+          </p>
         </section>
 
         {/* About the Founder and CV */}
@@ -161,13 +161,13 @@ export default function App() {
           className="section alt"
           ref={(el) => (sectionsRef.current[2] = el)}
         >
-
           <h2>WHY BRAIN-INFORMED STRUCTURED THINKING?</h2>
           <p>
             <strong>Problem Solving:</strong> Professional problems are rarely solved by information alone. They require observation, questioning, analysis and deliberate decision-making.
           </p>
           <p>
-            <strong>Brain Informed:</strong>Brain-informed structured thinking helps us move from immediate reaction to structured professional action.</p>
+            <strong>Brain Informed:</strong> Brain-informed structured thinking helps us move from immediate reaction to structured professional action.
+          </p>
         </section>
 
         {/* Product Portfolio */}
@@ -177,23 +177,23 @@ export default function App() {
         >
           <div className="text">
             <h2>PRO-CAPA™ </h2>
-              <p>
-    PRO-CAPA™ (Professional Corrective Action & Performance Advancement)
-    is a structured framework for turning workplace problems into opportunities
-    for learning, corrective action and improved professional performance.
-    It guides participants from understanding a problem to achieving and
-    sustaining measurable improvement.
-  </p>
+            <p>
+              PRO-CAPA™ (Professional Corrective Action & Performance Advancement)
+              is a structured framework for turning workplace problems into opportunities
+              for learning, corrective action and improved professional performance.
+              It guides participants from understanding a problem to achieving and
+              sustaining measurable improvement.
+            </p>
             <ul>
-    <li>Diagnose — Understand what is actually happening</li>
-    <li>Analyse — Examine the evidence and contributing factors</li>
-    <li>Identify Root Cause — Find the underlying cause</li>
-    <li>Correct — Develop the appropriate corrective response</li>
-    <li>Implement — Put the corrective action into practice</li>
-    <li>Measure — Determine what has changed</li>
-    <li>Verify — Confirm that the improvement is real and sustained</li>
-    <li>Improve — Use learning to advance performance</li>
-  </ul>
+              <li>Diagnose — Understand what is actually happening</li>
+              <li>Analyse — Examine the evidence and contributing factors</li>
+              <li>Identify Root Cause — Find the underlying cause</li>
+              <li>Correct — Develop the appropriate corrective response</li>
+              <li>Implement — Put the corrective action into practice</li>
+              <li>Measure — Determine what has changed</li>
+              <li>Verify — Confirm that the improvement is real and sustained</li>
+              <li>Improve — Use learning to advance performance</li>
+            </ul>
           </div>
           <div className="image-box">
             <img
@@ -204,8 +204,7 @@ export default function App() {
             />
           </div>
         </section>
-
-        {/* Production Standards */}
+                {/* Production Standards */}
         <section
           className="section alt side-by-side"
           ref={(el) => (sectionsRef.current[3] = el)}
@@ -213,21 +212,21 @@ export default function App() {
           <div className="text">
             <h2>FROM PROBLEM TO PERFORMANCE</h2>
             <p>
-    Every problem represents a gap between the current condition and the
-    desired condition. PRO-CAPA™ helps us convert that gap into a structured
-    improvement journey — from identifying the problem to achieving measurable
-    and sustainable performance improvement.
-  </p>
+              Every problem represents a gap between the current condition and the
+              desired condition. PRO-CAPA™ helps us convert that gap into a structured
+              improvement journey — from identifying the problem to achieving measurable
+              and sustainable performance improvement.
+            </p>
             <ul>
-    <li>Identify the Problem — Define what is actually wrong</li>
-    <li>Understand the Current Condition — Gather facts and evidence</li>
-    <li>Find the Root Cause — Look beyond the symptoms</li>
-    <li>Take Corrective Action — Develop an appropriate solution</li>
-    <li>Implement the Change — Convert the decision into action</li>
-    <li>Measure the Result — Determine whether performance has improved</li>
-    <li>Verify the Improvement — Confirm that the change is sustained</li>
-    <li>Advance Performance — Learn, improve and move to the next level</li>
-  </ul>
+              <li>Identify the Problem — Define what is actually wrong</li>
+              <li>Understand the Current Condition — Gather facts and evidence</li>
+              <li>Find the Root Cause — Look beyond the symptoms</li>
+              <li>Take Corrective Action — Develop an appropriate solution</li>
+              <li>Implement the Change — Convert the decision into action</li>
+              <li>Measure the Result — Determine whether performance has improved</li>
+              <li>Verify the Improvement — Confirm that the change is sustained</li>
+              <li>Advance Performance — Learn, improve and move to the next level</li>
+            </ul>
           </div>
           <div className="image-box">
             <img
@@ -246,20 +245,22 @@ export default function App() {
         >
           <div className="text">
             <h2>PRACTICAL THINKING TOOLS</h2>
-            <p>During the workshop, participants will practise structured thinking tools
-    that help transform observations and problems into evidence-based decisions
-    and practical actions.</p>
+            <p>
+              During the workshop, participants will practise structured thinking tools
+              that help transform observations and problems into evidence-based decisions
+              and practical actions.
+            </p>
 
             <ul>
-    <li>Problem Identification — Clearly define what needs attention</li>
-    <li>Observation & Evidence — Separate facts from assumptions</li>
-    <li>Problem Analysis — Examine the situation systematically</li>
-    <li>Root Cause Analysis — Identify why the problem is occurring</li>
-    <li>Corrective Action Planning — Decide what should be done</li>
-    <li>Implementation Planning — Convert decisions into action</li>
-    <li>Performance Measurement — Determine whether the action worked</li>
-    <li>Verification & Improvement — Sustain and advance the result</li>
-  </ul>
+              <li>Problem Identification — Clearly define what needs attention</li>
+              <li>Observation & Evidence — Separate facts from assumptions</li>
+              <li>Problem Analysis — Examine the situation systematically</li>
+              <li>Root Cause Analysis — Identify why the problem is occurring</li>
+              <li>Corrective Action Planning — Decide what should be done</li>
+              <li>Implementation Planning — Convert decisions into action</li>
+              <li>Performance Measurement — Determine whether the action worked</li>
+              <li>Verification & Improvement — Sustain and advance the result</li>
+            </ul>
           </div>
           <div className="image-box">
             <img
@@ -279,26 +280,26 @@ export default function App() {
           <div className="text">
             <h2>FOUR PROFESSIONAL PATHWAYS</h2>
             <ul>
-    <li>
-      <strong>SME Owner</strong> — Improve business performance and solve
-      operational bottlenecks.
-    </li>
+              <li>
+                <strong>SME Owner</strong> — Improve business performance and solve
+                operational bottlenecks.
+              </li>
 
-    <li>
-      <strong>Executive / Leader</strong> — Improve decisions, leadership
-      and organizational performance.
-    </li>
+              <li>
+                <strong>Executive / Leader</strong> — Improve decisions, leadership
+                and organizational performance.
+              </li>
 
-    <li>
-      <strong>Industrial Worker</strong> — Solve workplace problems
-      systematically and contribute to continuous improvement.
-    </li>
+              <li>
+                <strong>Industrial Worker</strong> — Solve workplace problems
+                systematically and contribute to continuous improvement.
+              </li>
 
-    <li>
-      <strong>Shop / Self-employed Professional</strong> — Improve daily
-      operations, productivity and income-generating activities.
-    </li>
-  </ul>
+              <li>
+                <strong>Shop / Self-employed Professional</strong> — Improve daily
+                operations, productivity and income-generating activities.
+              </li>
+            </ul>
           </div>
           <div className="image-box">
             <img
@@ -317,42 +318,42 @@ export default function App() {
         >
           <h2>WORKSHOP STUDY RESOURCES</h2>
           <p>
-    Use this portal as your learning companion before, during and after the
-    workshop. The resources are designed to help you understand the framework,
-    practise structured thinking and apply your learning to real professional
-    situations.
-  </p>
+            Use this portal as your learning companion before, during and after the
+            workshop. The resources are designed to help you understand the framework,
+            practise structured thinking and apply your learning to real professional
+            situations.
+          </p>
           <ul>
-    <li>
-      <strong>Study Notes</strong> — Review the key concepts and principles
-      introduced during the workshop.
-    </li>
+            <li>
+              <strong>Study Notes</strong> — Review the key concepts and principles
+              introduced during the workshop.
+            </li>
 
-    <li>
-      <strong>Case Study</strong> — Follow a practical problem through the
-      PRO-CAPA™ process from diagnosis to performance advancement.
-    </li>
+            <li>
+              <strong>Case Study</strong> — Follow a practical problem through the
+              PRO-CAPA™ process from diagnosis to performance advancement.
+            </li>
 
-    <li>
-      <strong>Worksheets</strong> — Use structured worksheets to analyse your
-      own problems and develop appropriate actions.
-    </li>
+            <li>
+              <strong>Worksheets</strong> — Use structured worksheets to analyse your
+              own problems and develop appropriate actions.
+            </li>
 
-    <li>
-      <strong>Personal Transformation Card</strong> — Record your current
-      situation, desired next level and planned actions.
-    </li>
+            <li>
+              <strong>Personal Transformation Card</strong> — Record your current
+              situation, desired next level and planned actions.
+            </li>
 
-    <li>
-      <strong>Practice Exercises</strong> — Strengthen your structured
-      thinking by applying the framework to practical situations.
-    </li>
-  </ul>
+            <li>
+              <strong>Practice Exercises</strong> — Strengthen your structured
+              thinking by applying the framework to practical situations.
+            </li>
+          </ul>
 
-  <p>
-    The purpose is simple: <strong>learn the framework, practise the thinking,
-    apply it to your work and create measurable improvement.</strong>
-  </p>
+          <p>
+            The purpose is simple: <strong>learn the framework, practise the thinking,
+            apply it to your work and create measurable improvement.</strong>
+          </p>
         </section>
 
         {/* Photo Gallery with Lightbox */}
@@ -374,8 +375,9 @@ export default function App() {
             ))}
           </div>
         </section>
-                  {/* Books by Chandima Gunasena */}
-         
+
+       
+{/* Books by Chandima Gunasena */}
 <section
   className="section"
   ref={(el) => (sectionsRef.current[8] = el)}
@@ -386,8 +388,8 @@ export default function App() {
     <p>
       These books provide additional reading for participants who wish to
       explore creative thinking, structured problem solving, environmental
-      data, greenhouse gas monitoring and practical industrial improvement
-      beyond the workshop.
+      data, greenhouse gas monitoring, workforce development and practical
+      industrial improvement beyond the workshop.
     </p>
 
     {/* Book 1 */}
@@ -401,8 +403,7 @@ export default function App() {
       </p>
 
       <p>
-        <em>
-          Curiosity Builds a Creative Mind</em> introduces a brain-informed
+        <em>Curiosity Builds a Creative Mind</em> introduces a brain-informed
         approach to developing curiosity, creativity, structured thinking,
         systems thinking and innovation.
       </p>
@@ -504,9 +505,11 @@ export default function App() {
       </a>
     </div>
 
-     {/* Book 3 */}
+    {/* Book 3 */}
     <div className="book-card">
-      <h3>PRO-CAPA™ — Professional Corrective Action &amp; Performance Advancement</h3>
+      <h3>
+        PRO-CAPA™ — Professional Corrective Action &amp; Performance Advancement
+      </h3>
 
       <p>
         <strong>
@@ -515,25 +518,27 @@ export default function App() {
       </p>
 
       <p>
-        <em>PRO-CAPA™ — Professional Corrective Action &amp; Performance
-    Advancement</em> introduces a structured approach to understanding
-    professional problems, identifying their root causes, implementing
-    corrective actions and advancing performance.
+        <em>
+          PRO-CAPA™ — Professional Corrective Action &amp; Performance
+          Advancement
+        </em> introduces a structured approach to understanding
+        professional problems, identifying their root causes, implementing
+        corrective actions and advancing performance.
       </p>
 
       <p>
         The book presents a practical methodology that connects structured
-    thinking with professional development. It guides readers through
-    eight stages: Diagnose, Analyse, Identify Root Cause, Correct,
-    Implement, Measure, Verify and Improve.
+        thinking with professional development. It guides readers through
+        eight stages: Diagnose, Analyse, Identify Root Cause, Correct,
+        Implement, Measure, Verify and Improve.
       </p>
 
       <p>
         <strong>Key themes:</strong>
         <br />
         Brain-Informed Thinking • Problem Diagnosis • Root Cause Analysis •
-    Corrective Action • Implementation • Performance Measurement •
-    Verification • Continuous Improvement
+        Corrective Action • Implementation • Performance Measurement •
+        Verification • Continuous Improvement
       </p>
 
       <a
@@ -546,72 +551,222 @@ export default function App() {
       </a>
     </div>
 
+    {/* Book 4 */}
+    <div className="book-card">
+      <h3>
+        PRO-CAPA™ — WORKFORCE: Developing the Future-Ready Workforce
+      </h3>
+
+      <p>
+        <strong>
+          Volume II | A Brain-Informed Framework for Human Capability
+          Development, Learning, Assessment and Workforce Transformation
+        </strong>
+      </p>
+
+      <p>
+        <em>
+          PRO-CAPA™ Volume II — WORKFORCE: Developing the Future-Ready Workforce
+        </em> introduces a brain-informed framework for developing human
+        capabilities and preparing individuals and organisations for the
+        changing demands of the future workplace.
+      </p>
+
+      <p>
+        The book explores the connection between thinking, learning,
+        application and demonstrated performance. It presents a structured
+        approach to human capability development, linking the development
+        of individual abilities with workplace learning, assessment and
+        workforce transformation.
+      </p>
+
+      <p>
+        The framework brings together seven interconnected capability
+        dimensions: Observe, Think, Create, Learn, Apply, Demonstrate
+        and Improve. These dimensions provide a foundation for developing
+        a workforce capable of continuous learning, practical application,
+        innovation and performance advancement.
+      </p>
+
+      <p>
+        <strong>Key themes:</strong>
+        <br />
+        Brain-Informed Learning • Human Capability Development •
+        Future-Ready Workforce • Structured Thinking • Creativity •
+        Workplace Learning • Competency Assessment • Practical Application •
+        Demonstrated Performance • Continuous Improvement
+      </p>
+
+      <a
+        href="https://www.amazon.com/dp/B0HR4F2K7M"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="amazon-button"
+      >
+        Buy on Amazon
+      </a>
+    </div>
+
     <p>
       <strong>
-        Together, these books reflect two complementary dimensions of
+        Together, these books reflect complementary dimensions of
         professional development: developing the creative and structured
-        mind, and applying structured thinking to real industrial and
-        environmental challenges.
+        mind, strengthening environmental measurement and industrial
+        improvement, advancing corrective action, and preparing people
+        and organisations for future workforce challenges.
       </strong>
     </p>
   </div>
 </section>
 
-        {/* Contact Information */}
-<section
-  className="section alt"
-  ref={(el) => (sectionsRef.current[9] = el)}
->
-  <h2>WORKSHOP INFORMATION & SUPPORT</h2>
+                {/* PRO-CAPA™ Training and Development Programmes */}
+        <section
+          className="section programs-section"
+          ref={(el) => (sectionsRef.current[10] = el)}
+        >
+          <div className="programs-heading">
+            <h2>PRO-CAPA™ Training and Development Programmes</h2>
+            <p>
+              Six structured programmes designed to develop curiosity,
+              creative thinking, professional capabilities and future-ready
+              workforce skills through learning and practical application.
+            </p>
+          </div>
 
-  <p>
-    <strong>Facilitator:</strong> Chandima Gunasena
-  </p>
+          <div className="programs-grid">
+            <article className="program-card">
+              <span className="program-number">01</span>
+              <h3>Improve Creativity</h3>
+              <h4>Common Workshop</h4>
+              <p>
+                Develop curiosity, creative thinking and the ability to generate
+                original ideas and practical solutions.
+              </p>
+            </article>
 
-  <p>
-    <strong>Workshop:</strong> Brain-Informed Structured Thinking Framework
-  </p>
+            <article className="program-card">
+              <span className="program-number">02</span>
+              <h3>A Future Pathway for Success</h3>
+              <h4>School Workshop</h4>
+              <p>
+                Help students develop future-ready thinking, explore possibilities
+                and make thoughtful decisions about future opportunities.
+              </p>
+            </article>
 
-  <p>
-    <strong>Methodology:</strong> PRO-CAPA™ — Professional Corrective Action
-    &amp; Performance Advancement
-  </p>
+            <article className="program-card">
+              <span className="program-number">03</span>
+              <h3>Teacher Training for Future Minds</h3>
+              <h4>Workshop</h4>
+              <p>
+                Introduce educators to Future Mind characteristics and practical
+                approaches for facilitating thinking and learning.
+              </p>
+            </article>
 
-  <p>
-    <strong>Learning Portal:</strong>{" "}
-    <a
-      href="https://solutionswaterminds.com/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Solutions WaterMinds
-    </a>
-  </p>
+            <article className="program-card">
+              <span className="program-number">04</span>
+              <h3>Future Mind</h3>
+              <h4>Certificate Course for Teachers</h4>
+              <p>
+                Develop teachers’ understanding and application of future-ready
+                human capabilities through structured learning and practice.
+              </p>
+            </article>
 
-  <p>
-    This portal provides study materials and practical resources to support
-    your learning before, during and after the workshop.
-  </p>
-</section>
+            <article className="program-card">
+              <span className="program-number">05</span>
+              <h3>Future Industry</h3>
+              <h4>Workshop</h4>
+              <p>
+                Explore changing industry characteristics, employer expectations
+                and the workforce capabilities needed for the future.
+              </p>
+            </article>
 
-</main>
+            <article className="program-card">
+              <span className="program-number">06</span>
+              <h3>Future Industry</h3>
+              <h4>Certificate Course</h4>
+              <p>
+                Examine future industry requirements and apply structured
+                approaches to workforce capability assessment and development.
+              </p>
+            </article>
+          </div>
+        </section>
 
-<footer className="footer">
-  <p>
-    © 2026 Brain-Informed Structured Thinking Framework —
-    Learn. Think. Apply. Improve.
-  </p>
-</footer>
+       
+      </main>
 
-{/* Lightbox */}
-<div
-  className={`lightbox-overlay ${lightboxImage ? "active" : ""}`}
-  onClick={() => setLightboxImage(null)}
->
-  {lightboxImage && (
-    <img src={lightboxImage} alt="Workshop Resource" />
-  )}
-</div>
+      {/* Footer */}
+      <footer className="footer">
+        <p>
+          © 2026 Brain-Informed Structured Thinking Framework —
+          Learn. Think. Apply. Improve.
+        </p>
+
+        <div className="footer-contact">
+          <h3>Chandima Gunasena</h3>
+
+          <p>
+            <strong>Phone:</strong>{" "}
+            <a href="tel:+94777181928">0777181928</a>
+            {" / "}
+            <a href="tel:+94716287419">0716287419</a>
+          </p>
+
+          <p>
+            <strong>Email:</strong>{" "}
+            <a href="mailto:swmv810@gmail.com">
+              swmv810@gmail.com
+            </a>
+          </p>
+
+          <p>
+            <strong>LinkedIn:</strong>{" "}
+            <a
+              href="https://www.linkedin.com/in/chandima-gunasena/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Chandima Gunasena
+            </a>
+          </p>
+
+          <p>
+            <strong>YouTube:</strong>{" "}
+            <a
+              href="https://www.youtube.com/@curiknow810"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CuriKnow
+            </a>
+          </p>
+
+          <p>
+            <strong>Facebook:</strong>{" "}
+            <a
+              href="https://www.facebook.com/curiknow"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CuriKnow
+            </a>
+          </p>
+        </div>
+      </footer>
+
+      {/* Lightbox */}
+      <div
+        className={`lightbox-overlay ${lightboxImage ? "active" : ""}`}
+        onClick={() => setLightboxImage(null)}
+      >
+        {lightboxImage && (
+          <img src={lightboxImage} alt="Workshop Resource" />
+        )}
+      </div>
     </div>
   );
 }
