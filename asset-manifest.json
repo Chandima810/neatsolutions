@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.f65221bc.css",
-    "main.js": "/static/js/main.f5f4e9da.js",
+    "main.css": "/static/css/main.98c99fb0.css",
+    "main.js": "/static/js/main.bd5d0e19.js",
     "static/media/background.png": "/static/media/background.aa8457d5559559066157.png",
     "static/media/logo.png": "/static/media/logo.207749936f8c436a394b.png",
+    "static/media/nursery4.jpg": "/static/media/nursery4.fdac1f410417d016253a.jpg",
     "static/media/nursery5.jpg": "/static/media/nursery5.3c9e68322b0d80930a6e.jpg",
     "static/media/nursery3.jpg": "/static/media/nursery3.78eb6afeb529c1e23f71.jpg",
     "static/media/nursery2.jpg": "/static/media/nursery2.f63f6cec4b6153c2f094.jpg",
@@ -13,13 +14,12 @@
     "static/media/organic.jpg": "/static/media/organic.a86df32ca893483d19d0.jpg",
     "static/media/coir.jpg": "/static/media/coir.6481a5051b292743aae6.jpg",
     "static/media/nursery7.jpg": "/static/media/nursery7.ac0afacec447f2e7f1c5.jpg",
-    "static/media/nursery4.jpg": "/static/media/nursery4.66278a9eec5504f8fa5d.jpg",
     "index.html": "/index.html",
-    "main.f65221bc.css.map": "/static/css/main.f65221bc.css.map",
-    "main.f5f4e9da.js.map": "/static/js/main.f5f4e9da.js.map"
+    "main.98c99fb0.css.map": "/static/css/main.98c99fb0.css.map",
+    "main.bd5d0e19.js.map": "/static/js/main.bd5d0e19.js.map"
   },
   "entrypoints": [
-    "static/css/main.f65221bc.css",
-    "static/js/main.f5f4e9da.js"
+    "static/css/main.98c99fb0.css",
+    "static/js/main.bd5d0e19.js"
   ]
 }
