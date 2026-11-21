@@ -696,7 +696,7 @@ export default function App() {
     practical teaching matrices, assessment rubrics and learning
     templates.</P>
     
-    <P>Whether you are a schoolteacher, TVET instructor, university
+    <p>Whether you are a schoolteacher, TVET instructor, university
     lecturer, trainer or educational leader, this handbook offers
     a practical starting point for creating learning experiences
     that develop capable, adaptable and future-oriented individuals.</p>
