@@ -683,18 +683,18 @@ export default function App() {
     of knowledge, skills, attitudes and future capabilities.
     </p>
 
-       <P> This handbook provides practical guidance for integrating
+       <p> This handbook provides practical guidance for integrating
     these dimensions into lesson planning, classroom activities,
     technical and vocational education, university teaching
     and professional development.
-    </P>
+    </p>
 
-        <P>Teachers will discover how to design activities around
+        <p>Teachers will discover how to design activities around
     six thinking functionalities, integrate thinking objectives
     with subject learning outcomes, develop and assess Knowledge,
     Skills and Attitudes, encourage personal reflection, and use
     practical teaching matrices, assessment rubrics and learning
-    templates.</P>
+    templates.</p>
     
     <p>Whether you are a schoolteacher, TVET instructor, university
     lecturer, trainer or educational leader, this handbook offers
