@@ -369,6 +369,9 @@ export default function App() {
     <li>
       <strong>Teachers Training Workshop</strong> – Ceylon Campus
     </li>
+    <li>
+      <strong>Creativity Workshop</strong> – Technical College Ambilipitiya
+    </li>
   </ul>
 
   <p>
@@ -621,6 +624,100 @@ export default function App() {
 
       <a
         href="https://www.amazon.com/dp/B0HR4F2K7M"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="amazon-button"
+      >
+        Buy on Amazon
+      </a>
+    </div>
+
+    {/* Book 5 */}
+    <div className="book-card">
+      <h3>
+        FUTURE MIND: A Teacher's Handbook for Developing Human Thinking
+    and Future Capabilities
+      </h3>
+
+      <p>
+        <strong>
+           A Teacher's Handbook for Developing Human Thinking and
+      Building the Dynamic Future Self
+        </strong>
+      </p>
+
+      <p>
+        <strong>
+        <em>Future Mind</em> introduces a practical educational framework
+    that helps teachers move beyond content delivery towards
+    deliberately developing human thinking through purposeful
+    learning activities.
+    </strong>
+      </p>
+
+      <p>
+        <strong>
+                   The handbook addresses a fundamental question in education:
+    Are we preparing learners merely to acquire knowledge, or
+    helping them develop the capacity to think, create and shape
+    their own futures? 
+    </strong>
+    </p>
+
+    <p> 
+      <strong>
+      At the heart of this handbook is the <strong>Six-Function
+    Brain Model: OBSERVE, RECALL, GENERATE, DEVELOP, EVALUATE
+    and ACT.</strong> These six pedagogical functionalities
+    provide a practical structure for designing learning
+    experiences that encourage students to notice, remember,
+    question, create, evaluate and implement ideas.
+    </strong>
+    </p>
+
+     <p>   The framework connects four dimensions of development:
+    <strong> Functional Thinking Facilitation, Functional KSA
+    Development, Present-Time KSA Packaging and Dynamic
+    Future-Self Development.</strong> Together, these dimensions
+    connect purposeful learning activities with the development
+    of knowledge, skills, attitudes and future capabilities.
+    </p>
+
+       <P> This handbook provides practical guidance for integrating
+    these dimensions into lesson planning, classroom activities,
+    technical and vocational education, university teaching
+    and professional development.
+    </P>
+
+        <P>Teachers will discover how to design activities around
+    six thinking functionalities, integrate thinking objectives
+    with subject learning outcomes, develop and assess Knowledge,
+    Skills and Attitudes, encourage personal reflection, and use
+    practical teaching matrices, assessment rubrics and learning
+    templates.</P>
+    
+    <P>Whether you are a schoolteacher, TVET instructor, university
+    lecturer, trainer or educational leader, this handbook offers
+    a practical starting point for creating learning experiences
+    that develop capable, adaptable and future-oriented individuals.</p>
+    
+
+      <p>
+        Education should not only prepare learners for the future.
+      It should develop their capacity to shape it.
+      </p>
+
+      <p>
+        <strong>Key themes:</strong>
+        <br />
+        Future Mind • Brain-Informed Education • Six-Function Brain
+    Model • Human Thinking Development • Functional KSA Development •
+    Dynamic Future Self • Lesson Planning • TVET Education •
+    Competency Development • Learning Assessment • Future Capabilities
+      </p>
+
+      <a
+        href="https://www.amazon.com/dp/B0HSJ71NY2"
         target="_blank"
         rel="noopener noreferrer"
         className="amazon-button"
