@@ -122,6 +122,32 @@ export default function App() {
           </p>
         </section>
 
+
+{/* Download Document Button */}
+<div className="download-section">
+  <a
+    href="https://drive.google.com/uc?export=download&id=1jqzdPJYHV7LPXSqNsKhNph1qed3qmrs6"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="amazon-button"
+  >
+    Download Workshop Summary in English 
+  </a>
+</div>
+
+{/* Sinhala Version Download Button */}
+<div className="download-section">
+  <a
+    href="#"
+    className="amazon-button"
+    onClick={(e) => {
+      e.preventDefault();
+      alert("The Sinhala version will be available soon.");
+    }}
+  >
+    සිංහල සංස්කරණය බාගත කරන්න | Download Sinhala Version
+  </a>
+</div>
         {/* About the Founder and CV */}
         <section
           className="section alt"

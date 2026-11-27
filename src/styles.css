@@ -487,3 +487,15 @@ a:hover {
   }
 }
 
+.download-section {
+  text-align: center;
+  margin: 25px auto 35px;
+}
+
+.logo {
+  width: 450px;
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
