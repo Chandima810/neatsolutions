@@ -138,12 +138,10 @@ export default function App() {
 {/* Sinhala Version Download Button */}
 <div className="download-section">
   <a
-    href="#"
+    href="https://drive.google.com/uc?export=download&id=1dmXyPdTliHUNi3npqAXfuBN26odtqW8h"
+    target="_blank"
+    rel="noopener noreferrer"
     className="amazon-button"
-    onClick={(e) => {
-      e.preventDefault();
-      alert("The Sinhala version will be available soon.");
-    }}
   >
     සිංහල සංස්කරණය බාගත කරන්න | Download Sinhala Version
   </a>
